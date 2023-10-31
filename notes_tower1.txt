@@ -1,0 +1,77 @@
+vs: File/ROM CRC32: AA2D5C55
+title image decomp RAM:
+7eb240
+decomp from:
+80e1e3 start
+80e22a (1st: acc282)(1st graph: b5f08a) 
+
+byte 1+2: uncompressed length -> $4305 / DMA size
+byte 3+4: compressed length
+ctrl byte: binary mask 8 for next bytes, reverse order, 1=literal
+ctrl word: right 4 bits+0x2 = repeat count
+ctrl word: left 12 bits = buffer index for start
+
+DDDDDDDD DDDDLLLL
+76543210 BA983210
+i        j
+00001110 00011111
+00001110 0001|1111 low byte>>4
+00001110 00000001 byte swap
+00000001 00001110 =pos
+okumura encode: i=(pos&FF); j=((pos>>4)&f0)|(len-(thresh+1)))
+okumura decode: i |= ((j & 0xf0) << 4);  j = (j & 0x0f) + THRESHOLD
+
+buffer (4096 bytes) init: 4060-4077 = 0x20
+buffer init index: 0x0fee (4078)
+
+
+$f0: reference, length to retrieve
+$f4-$f6: ROM source address
+$f7: empty?
+$f8/$f9: reference, index part
+$fa/$fb: active control byte
+$fc/$fd: buffer position
+$fe: compressed bytes left to read
+
+$acc282 -> $164282 graphics, memory -> file address
+$b5f08a -> $1af08a
+
+80af45 script in ram
+868000 (869616 / 879870) font characters a 18 bytes
+80bfa8 load font, decompress to ram (2bd...), again to 7e5000 (4bpp)
+  $02b7 decomp case, $16-$18 string addr, $20-$22 font addr,
+
+05e891 copy to ram 7e5000
+  $1e character count -> choose mask
+ 
+80942d script->character encoding?
+0x18 current char?
+050c70
+051056
+
+3fe59e: pointer list (bank 3f)
+  3fe62c menu tooltip
+  3fe65a menu tooltip
+
+
+on font glyph byte,
+case A:
+1st: AND f0, >>4 = b9
+1st: AND 0f, <<4 = ba
+2nd: AND f0, >>4, OR with ba -> ba
+2nd: AND 0f =bb
+3rd: =bc
+
+case B:
+1st: =b9
+2nd: AND f0 = ba
+2nd: AND 0f, << 4 = bb
+3rd: AND f0, >> 4, OR bb, =bb
+3rd: AND 0f, << 4, =bc
+
+glyph: bottom half: 5 top rows color 8, top half: 6 bottom rows color 1
+  overlap color 5
+868b0a: A, 868b1c: B, 868b2e: C
+030B0A     030B1C     030B2E
+
+05e86f if *?
