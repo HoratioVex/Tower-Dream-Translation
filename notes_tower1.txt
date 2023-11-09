@@ -43,6 +43,8 @@ $b5f08a -> $1af08a
 
 05e891 copy to ram 7e5000
   $1e character count -> choose mask
+05e835 read enc char
+
  
 80942d script->character encoding?
 0x18 current char?
@@ -75,3 +77,17 @@ glyph: bottom half: 5 top rows color 8, top half: 6 bottom rows color 1
 030B0A     030B1C     030B2E
 
 05e86f if *?
+5b055,5ded4: ld pointer to main menu (3ff34e)
+3de547, pt pc 283ad
+
+name entry
+ram 1ee5
+letters 58ffb
+8th char in 2 btm rows: diacritics
+59449: write copy oto 1e18
+58e84: compare for 4 letters
+59491: copy to 1ee8
+05913e: cmp for 3 chars
+058dcc (@58dc4) lookup table #006f char pos on name
+058db5 (@58d8f)  lookup table #0037 cursor box
+05929e remove letter
