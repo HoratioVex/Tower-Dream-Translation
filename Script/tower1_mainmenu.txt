@@ -1,0 +1,549 @@
+#VAR(Table, TABLE)
+#ADDTBL("sjis_ins.tbl", Table)
+#ACTIVETBL(Table)
+
+#JMP($1FE62C,$1FFFFF)
+
+//GAME NAME:		Tower Dream (SFC)
+
+
+//BLOCK #000 NAME:		Main Menu Tool Tips
+
+//POINTER #1 @ $1FE5A0 - STRING #1 @ $1FE62C
+
+#W16($1FE5A0)
+//<BEGIN>　上下で選んで　Ａで決定してください　　　<END>
+<BEGIN> D-Pad to move, A to confirm  <END>
+
+//POINTER #2 @ $1FE5A2 - STRING #2 @ $1FE65A
+
+#W16($1FE5A2)
+//<BEGIN>　れんしゅうで遊んでも　セーブされません　<END>
+<BEGIN> Stats won't be saved         <END>
+
+//POINTER #3 @ $1FE5A4 - STRING #3 @ $1FE688
+
+#W16($1FE5A4)
+//<BEGIN>　何人で遊びますか？　　　　　　　　　　　<END>
+<BEGIN> How many players?            <END>
+
+//POINTER #4 @ $1FE5A6 - STRING #4 @ $1FE6B6
+
+#W16($1FE5A6)
+//<BEGIN>　みんなのプレイを　観戦します　　　　　　<END>
+<BEGIN> Spectator mode               <END>
+
+//POINTER #5 @ $1FE5A8 - STRING #5 @ $1FE6E4
+
+#W16($1FE5A8)
+//<BEGIN>　あなたの名前を　登録してください　　　　<END>
+<BEGIN> Enter your name              <END>
+
+//POINTER #6 @ $1FE5AA - STRING #6 @ $1FE712
+
+#W16($1FE5AA)
+//<BEGIN>　自分のキャラを決めてください　　　　　　<END>
+<BEGIN> Pick a character             <END>
+
+//POINTER #7 @ $1FE5AC - STRING #7 @ $1FE740
+
+#W16($1FE5AC)
+//<BEGIN>　このキャラで　いいですか？　　　　　　　<END>
+<BEGIN> Choose this character?       <END>
+
+//POINTER #8 @ $1FE5AE - STRING #8 @ $1FE76E
+
+#W16($1FE5AE)
+//<BEGIN>　対戦相手を　１人選んでください　　　　　<END>
+<BEGIN> Pick 1 opponent              <END>
+
+//POINTER #9 @ $1FE5B0 - STRING #9 @ $1FE79C
+
+#W16($1FE5B0)
+//<BEGIN>　対戦相手を　２人選んでください　　　　　<END>
+<BEGIN> Pick 2 opponents             <END>
+
+//POINTER #10 @ $1FE5B2 - STRING #10 @ $1FE7CA
+
+#W16($1FE5B2)
+//<BEGIN>　対戦相手を　３人選んでください　　　　　<END>
+<BEGIN> Pick 3 opponents             <END>
+
+//POINTER #11 @ $1FE5B4 - STRING #11 @ $1FE7F8
+
+#W16($1FE5B4)
+//<BEGIN>　Ａボタンで　もどります　　　　　　　　　<END>
+<BEGIN> Press A to return            <END>
+
+//POINTER #12 @ $1FE5B6 - STRING #12 @ $1FE826
+
+#W16($1FE5B6)
+//<BEGIN>　プレイをする４人を　選んでください　　　<END>
+<BEGIN> Pick 4 players               <END>
+
+//POINTER #13 @ $1FE5B8 - STRING #13 @ $1FE854
+
+#W16($1FE5B8)
+//<BEGIN>　対戦相手を決めます　　　　　　　　　　　<END>
+<BEGIN> Pick opponents               <END>
+
+//POINTER #14 @ $1FE5BA - STRING #14 @ $1FE882
+
+#W16($1FE5BA)
+//<BEGIN>　１人めは　この人でいいですか？　　　　　<END>
+<BEGIN> Confirm Player 1             <END>
+
+//POINTER #15 @ $1FE5BC - STRING #15 @ $1FE8B0
+
+#W16($1FE5BC)
+//<BEGIN>　２人めは　この人でいいですか？　　　　　<END>
+<BEGIN> Confirm Player 2             <END>
+
+//POINTER #16 @ $1FE5BE - STRING #16 @ $1FE8DE
+
+#W16($1FE5BE)
+//<BEGIN>　３人めは　この人でいいですか？　　　　　<END>
+<BEGIN> Confirm Player 3             <END>
+
+//POINTER #17 @ $1FE5C0 - STRING #17 @ $1FE90C
+
+#W16($1FE5C0)
+//<BEGIN>　上下で選んで　Ａで決定してください　　　<END>
+<BEGIN> D-Pad to move, A to confirm  <END>
+
+//POINTER #18 @ $1FE5C2 - STRING #18 @ $1FE93A
+
+#W16($1FE5C2)
+//<BEGIN>　Ａボタンで　順番を決めます　　　　　　　<END>
+<BEGIN> A to determine turn order    <END>
+
+//POINTER #19 @ $1FE5C4 - STRING #19 @ $1FE968
+
+#W16($1FE5C4)
+//<BEGIN>　だれが　遊びますか？　　　　　　　　　　<END>
+<BEGIN> Choose player                <END>
+
+//POINTER #20 @ $1FE5C6 - STRING #20 @ $1FE996
+
+#W16($1FE5C6)
+//<BEGIN>　２人めは　だれが　遊びますか？　　　　　<END>
+<BEGIN> Choose player 2              <END>
+
+//POINTER #21 @ $1FE5C8 - STRING #21 @ $1FE9C4
+
+#W16($1FE5C8)
+//<BEGIN>　３人めは　だれが　遊びますか？　　　　　<END>
+<BEGIN> Choose player 3              <END>
+
+//POINTER #22 @ $1FE5CA - STRING #22 @ $1FE9F2
+
+#W16($1FE5CA)
+//<BEGIN>　４人めは　だれが　遊びますか？　　　　　<END>
+<BEGIN> Choose player 4              <END>
+
+//POINTER #23 @ $1FE5CC - STRING #23 @ $1FEA20
+
+#W16($1FE5CC)
+//<BEGIN>　いれかえる人を　選んでください　　　　　<END>
+<BEGIN> Swap with whom?              <END>
+
+//POINTER #24 @ $1FE5CE - STRING #24 @ $1FEA4E
+
+#W16($1FE5CE)
+//<BEGIN>　ここに名前を　登録しますか？　　　　　　<END>
+<BEGIN> Enter name?                  <END>
+
+//POINTER #25 @ $1FE5D0 - STRING #25 @ $1FEA7C
+
+#W16($1FE5D0)
+//<BEGIN>　<NN>さんの記録を消しました　　　　　<END>
+<BEGIN> <NN>'s profile deleted    <END>
+
+//POINTER #26 @ $1FE5D2 - STRING #26 @ $1FEAA4
+
+#W16($1FE5D2)
+//<BEGIN>　上下で選択して　左右で設定変更できます　<END>
+<BEGIN> D-Pad to change settings     <END>
+
+//POINTER #27 @ $1FE5D4 - STRING #27 @ $1FEAD2
+
+#W16($1FE5D4)
+//<BEGIN>　Ａボタンで　順番を決めます　　　　　　　<END>
+<BEGIN> A to determine turn order    <END>
+
+//POINTER #28 @ $1FE5D6 - STRING #28 @ $1FEB00
+
+#W16($1FE5D6)
+//<BEGIN>　すべての記録を　消します　　　　　　　　<END>
+<BEGIN> Delete all profiles          <END>
+
+//POINTER #29 @ $1FE5D8 - STRING #29 @ $1FEB2E
+
+#W16($1FE5D8)
+//<BEGIN>　スタートの　順番を決めます　　　　　　　<END>
+<BEGIN> Determine turn order         <END>
+
+//POINTER #30 @ $1FE5DA - STRING #30 @ $1FEB5C
+
+#W16($1FE5DA)
+//<BEGIN>　前の続きからで　いいですか？　　　　　　<END>
+<BEGIN> Continue?                    <END>
+
+//POINTER #31 @ $1FE5DC - STRING #31 @ $1FEB8A
+
+#W16($1FE5DC)
+//<BEGIN>　すべての記録を　消しました　　　　　　　<END>
+<BEGIN> All profiles deleted          <END>
+
+//POINTER #32 @ $1FE5DE - STRING #32 @ $1FEBB8
+
+#W16($1FE5DE)
+//<BEGIN>　どちらを見ますか？　　　　　　　　　　　<END>
+<BEGIN> Choose one                   <END>
+
+//POINTER #33 @ $1FE5E0 - STRING #33 @ $1FEBE6
+
+#W16($1FE5E0)
+//<BEGIN>　どのデータを見ますか？　　　　　　　　　<END>
+<BEGIN> Choose data                  <END>
+
+//POINTER #34 @ $1FE5E2 - STRING #34 @ $1FEC14
+
+#W16($1FE5E2)
+//<BEGIN>　　　　　　　　　キーで　他も見れます　<END>
+<BEGIN>     to see the rest          <END>
+
+//POINTER #35 @ $1FE5E4 - STRING #35 @ $1FEC40
+
+#W16($1FE5E4)
+//<BEGIN>１　優　　　勝　<END>
+<BEGIN>1 Winner   <END>
+
+//POINTER #36 @ $1FE5E6 - STRING #36 @ $1FEC54
+
+#W16($1FE5E6)
+//<BEGIN>２　ビ　　　リ　<END>
+<BEGIN>2 ???<END>
+
+//POINTER #37 @ $1FE5E8 - STRING #37 @ $1FEC68
+
+#W16($1FE5E8)
+//<BEGIN>３　勝　　　率　<END>
+<BEGIN>3 Win Rate<END>
+
+//POINTER #38 @ $1FE5EA - STRING #38 @ $1FEC7C
+
+#W16($1FE5EA)
+<END>
+
+
+//POINTER #39 @ $1FE5EC - STRING #39 @ $1FEC8C
+
+#W16($1FE5EC)
+<END>
+
+
+//POINTER #40 @ $1FE5EE - STRING #40 @ $1FEC9C
+
+#W16($1FE5EE)
+<END>
+
+
+//POINTER #41 @ $1FE5F0 - STRING #41 @ $1FECAC
+
+#W16($1FE5F0)
+<END>
+
+
+//POINTER #42 @ $1FE5F2 - STRING #42 @ $1FECBC
+
+#W16($1FE5F2)
+//<BEGIN>８　最大資産差　<END>
+<BEGIN>8 Max Asset Difference<END>
+
+//POINTER #43 @ $1FE5F4 - STRING #43 @ $1FECD0
+
+#W16($1FE5F4)
+//<BEGIN>　ロードするファイルを　選んでください　　<END>
+<BEGIN> Choose file to load          <END>
+
+//POINTER #44 @ $1FE5F6 - STRING #44 @ $1FECFE
+
+#W16($1FE5F6)
+//<BEGIN>　セーブするファイルを　選んでください　　<END>
+<BEGIN> Choose file to save          <END>
+
+//POINTER #45 @ $1FE5F8 - STRING #45 @ $1FED2C
+
+#W16($1FE5F8)
+//<BEGIN>　削除するファイルを　選んでください　　　<END>
+<BEGIN> Choose file to delete        <END>
+
+//POINTER #46 @ $1FE5FA - STRING #46 @ $1FED5A
+
+#W16($1FE5FA)
+//<BEGIN>　データがありません　　　　　　　　　　　<END>
+<BEGIN> No data available            <END>
+
+//POINTER #47 @ $1FE5FC - STRING #47 @ $1FED88
+
+#W16($1FE5FC)
+//<BEGIN>　ターボファイルに　アクセスしています　　<END>
+<BEGIN> Accessing Turbo File         <END>
+
+//POINTER #48 @ $1FE5FE - STRING #48 @ $1FEDB6
+
+#W16($1FE5FE)
+//<BEGIN>　ロードしました　　　　　　　　　　　　　<END>
+<BEGIN> Load complete                <END>
+
+//POINTER #49 @ $1FE600 - STRING #49 @ $1FEDE4
+
+#W16($1FE600)
+//<BEGIN>　セーブしました　　　　　　　　　　　　　<END>
+<BEGIN> Save complete                <END>
+
+//POINTER #50 @ $1FE602 - STRING #50 @ $1FEE12
+
+#W16($1FE602)
+//<BEGIN>　削除しました　　　　　　　　　　　　　　<END>
+<BEGIN> Deletion complete            <END>
+
+//POINTER #51 @ $1FE604 - STRING #51 @ $1FEE40
+
+#W16($1FE604)
+//<BEGIN>　左右で選んで　Ａで決定してください　　　<END>
+<BEGIN> D-Pad to choose, A to confirm<END>
+
+//POINTER #52 @ $1FE606 - STRING #52 @ $1FEE6E
+
+#W16($1FE606)
+//<BEGIN>　このファイルに　セーブしていいですか？　<END>
+<BEGIN> Save this file?              <END>
+
+//POINTER #53 @ $1FE608 - STRING #53 @ $1FEE9C
+
+#W16($1FE608)
+//<BEGIN>　このファイルを　削除していいですか？　　<END>
+<BEGIN> Delete this file?            <END>
+
+//POINTER #54 @ $1FE60A - STRING #54 @ $1FEECA
+
+#W16($1FE60A)
+//<BEGIN>　これでいいですか？　　　　　　　　　　　<END>
+<BEGIN> Okay?                        <END>
+
+//POINTER #55 @ $1FE60C - STRING #55 @ $1FEEF8
+
+#W16($1FE60C)
+//<BEGIN>　ゲームスタートです！　　　　　　　　　　<END>
+<BEGIN> Start the game!              <END>
+
+//POINTER #56 @ $1FE60E - STRING #56 @ $1FEF26
+
+#W16($1FE60E)
+//<BEGIN>　<NN>さんが　キャンペーン実行中です<END>
+<BEGIN> <NN> is in a Campaign     <END>
+
+//POINTER #57 @ $1FE610 - STRING #57 @ $1FEF4C
+
+#W16($1FE610)
+//<BEGIN>　　　　　　　　　　　　　　　　　　　　　<END>
+<BEGIN>                              <END>
+
+//POINTER #58 @ $1FE612 - STRING #58 @ $1FEF7A
+
+#W16($1FE612)
+//<BEGIN>　<NN>さんで　いいですか？<END>
+<BEGIN> Is <NN> correct?          <END>
+
+//POINTER #59 @ $1FE614 - STRING #59 @ $1FEF96
+
+#W16($1FE614)
+//<BEGIN>　<NN>さんの　キャラを決めてください<END>
+<BEGIN> <NN>, choose character    <END>
+
+//POINTER #60 @ $1FE616 - STRING #60 @ $1FEFBC
+
+#W16($1FE616)
+//<BEGIN>　<NN>人めは　けんたさんで　いいですか？　　<END>
+<BEGIN> <NN>, play as Leo?        <END>
+//Kenta
+
+//POINTER #61 @ $1FE618 - STRING #61 @ $1FEFEA
+
+#W16($1FE618)
+//<BEGIN>　<NN>人めは　ユカさんで　いいですか？　　　<END>
+<BEGIN> <NN>, play as Zoe?        <END>
+//Yuka
+
+//POINTER #62 @ $1FE61A - STRING #62 @ $1FF018
+
+#W16($1FE61A)
+//<BEGIN>　<NN>人めは　丈二さんで　いいですか？　　　<END>
+<BEGIN> <NN>, play as Ace?        <END>
+//Joji
+
+//POINTER #63 @ $1FE61C - STRING #63 @ $1FF046
+
+#W16($1FE61C)
+//<BEGIN>　<NN>人めは　まりもさんで　いいですか？　　<END>
+<BEGIN> <NN>, play as Jessie?     <END>
+//Marimo
+
+
+//POINTER #64 @ $1FE61E - STRING #64 @ $1FF074
+
+#W16($1FE61E)
+//<BEGIN>　<NN>人めは　玉三郎さんで　いいですか？　　<END>
+<BEGIN> <NN>, play as Milo?       <END>
+//Tamasaburo
+
+//POINTER #65 @ $1FE620 - STRING #65 @ $1FF0A2
+
+#W16($1FE620)
+//<BEGIN>　<NN>人めは　彦左ェ門さんで　いいですか？　<END>
+<BEGIN> <NN>, play as Walter?     <END>
+//Hikozaemon
+
+
+//POINTER #66 @ $1FE622 - STRING #66 @ $1FF0D0
+
+#W16($1FE622)
+//<BEGIN>　<NN>人めは　はづみさんで　いいですか？　　<END>
+<BEGIN> <NN>, play as Helen?      <END>
+//Hazumi
+
+//POINTER #67 @ $1FE624 - STRING #67 @ $1FF0FE
+
+#W16($1FE624)
+//<BEGIN>　<NN>人めは　宇宙意志さんで　いいですか？　<END>
+<BEGIN> <NN>, play as Xodiac?     <END>
+//Uchu-Ishi / Cosmic Will
+
+//POINTER #68 @ $1FE626 - STRING #68 @ $1FF12C
+
+#W16($1FE626)
+//<BEGIN>　<NN>人めは　ユデールさんで　いいですか？　<END>
+<BEGIN> <NN>, play as Squee?      <END>
+//Yuderu/Udale
+
+
+//POINTER #69 @ $1FE628 - STRING #69 @ $1FF15A
+
+#W16($1FE628)
+//<BEGIN>　ＲＬで　カーソルが動かせます　　　　　　<END>
+<BEGIN> R/L to move cursor           <END>
+
+//POINTER #70 @ $1FE62A - STRING #70 @ $1FF188
+
+#W16($1FE62A)
+//<BEGIN>　<NN>さんは　すでに登録されています<END>
+<BEGIN> <NN> already registered   <END>
+
+//BLOCK #001 NAME:		Main Menu Entries
+//Block Range: $1FF34E - $1FF3B1
+
+#JMP($1FF34E,$1FF9F5)
+#W16($02B056)
+#W16($02DED4)
+//<BEGIN>　フリー　　　　　キャンペーン　　れんしゅう　　　記録を見る　　　記録を消す　　ターボファイル　<END>
+<BEGIN> Free Play   Campaign    Practice    View Stats  Erase StatsTurbo File                          <END>
+
+//<BEGIN>１人　　２人　　３人　　４人　　観戦　　<END>
+<BEGIN> 1     2     3     4    AIs             <END>
+
+//<END>あかさたなはまやらわぁゃ１６いきしちにひみゆりをぃゅ２７うくすつぬふむよるんぅょ３８えけせてねへめ゛れ・ぇっ４９おこそとのほも゜ろ−ぉ　５０アカサタナハマヤラワァャ１６イキシチニヒミユリヲィュ２７ウクスツヌフムヨルンゥョ３８エケセテネヘメ゛レ・ェッ４９オコソトノホモ゜ロ−ォ　５０<END>
+<END>A B C D E -             1 6 F G H I J *             2 7 K L M N O '             3 8 P Q R S T .             4 9 U V W X Y Z             5 0 a b c d e -             1 6 f g h i j *             2 7 k l m n o '             3 8 p q r s t .             4 9 u v w x y z             5 0 <END>
+
+//<BEGIN>　　　　　　〔名前入力〕<END>
+<BEGIN>              Enter Name<END>
+
+//<BEGIN>はい　　　　いいえ　　　<END>
+<BEGIN>Yes      No             <END>
+
+//<BEGIN>はい　　　　　　いいえ　　　　　プロフィール　　<END>
+<BEGIN>Yes         No          Profile                 <END>
+
+//<BEGIN>倉明けんた　　　１３才　　強さＤ人なつこくて素直　得意な作戦　　なんでも吸収合併勝率　　<END>
+<BEGIN>Leo Chapman Age:13 Skl:DFriendly    Strategy    Acquistions WR                          <END>
+
+//<BEGIN>嵐山ユカ　　　　１１才　　強さＣ甘えん坊で移り気　得意な作戦　　ライン収入マニア勝率　　<END>
+<BEGIN>Zoe ValenciaAge:11 Skl:CSpoiled     Strategy    Line fees   WR                          <END>
+
+//<BEGIN>御手板丈二　　　１９才　　強さＡキザなひねくれ屋　得意な作戦　　とことんタワー　勝率　　<END>
+<BEGIN>Ace Kaiser  Age:19 Skl:AEccentric   Strategy    Tower focus WR                          <END>
+
+//<BEGIN>有森まりも　　　１７才　　強さＢ強気でおおざっぱ　得意な作戦　　一直線２０階積み勝率　　<END>
+<BEGIN>Jessie RazorAge:17 Skl:BImpulsive   Strategy    High Towers WR                          <END>
+
+//<BEGIN>西郷玉三郎　　　　５才　　強さＣ基本重視の堅実派　得意な作戦　　ひたすら２位狙い勝率　　<END>
+<BEGIN>Milo        Age: 5 Skl:CSolid       Strategy    Slow build  WR                          <END>
+
+//<BEGIN>金ヶ崎彦左ェ門　５２才　　強さＡずるがしこい中年　得意な作戦　　ケチケチ持久戦　勝率　　<END>
+<BEGIN>Walter SloanAge:52 Skl:ACunning     Strategy    Attrition   WR                          <END>
+
+//<BEGIN>西尾はづみ　　　２３才　　強さＡ自尊心が強く派手　得意な作戦　　不思議はぐれ置き勝率　　<END>
+<BEGIN>Helen Bruno Age:23 Skl:AEgocentric  Strategy    Miraculous! WR                          <END>
+
+//<BEGIN>宇宙意志　　　　４８億？才強さＤ正体不明の生命体　得意な作戦　　ノーガード戦法　勝率　　<END>
+<BEGIN>Xodiac      Age:?? Skl:DInscrutable Strategy    All-In      WR                          <END>
+
+//<BEGIN>海野ユデール　　　８才　　強さＢひょうきんで単純　得意な作戦　　合併直前からみ技勝率　　<END>
+<BEGIN>Squee BibbleAge: 8 Skl:BDroll       Strategy    Sudden hit  WR                          <END>
+
+//<BEGIN>ゲームスタート　　　初期資金　　　　　Ｇ給料　　　　　　　Ｇマーカー　　　　　％<END>
+<BEGIN>Start Game   Init.Funds     G  Salary          Claim                  %         <END>
+
+//<BEGIN>タイムズスクエア残りマーカー<END>
+<BEGIN>Times Square Left Claims    <END>
+
+//<BEGIN>キングオブ東京　残りマーカー<END>
+<BEGIN>King of Tokyo    Left Claims<END>
+
+//<BEGIN>ボラボラ島　　　残りマーカー<END>
+<BEGIN>Bora Bora    Left   Claims  <END>
+
+//<BEGIN>香港ナイトツアー残りマーカー<END>
+<BEGIN>Hong Kong Nights  Left Claim<END>
+
+//<BEGIN>アクム街１３番地残りマーカー<END>
+<BEGIN>Pumpkin St 13    Left Claim <END>
+
+//<BEGIN>ラッキースター　残りマーカー<END>
+<BEGIN>Lucky Star   Left  Claim    <END>
+
+//<BEGIN>メレンゲの夢の国残りマーカー<END>
+<BEGIN>Candy Dreams   Left Claim   <END>
+
+//<BEGIN>シャングリラ　　残りマーカー<END>
+<BEGIN>Shangri-La   Left   Claim   <END>
+
+//BLOCK #002 NAME:		Menu Entry TurboFile
+//Block Range: $1EE547 - $1EE73E
+
+#JMP($1EE547,$1EE73E)
+//<BEGIN>ターボファイルを　正しく接続し　ＳＴＦモードに　してください　　<END>
+<BEGIN>Connect Turbo File and  set it to STF mode                      <END>
+
+//<BEGIN>データが　いっぱいです　　　　　どれか　削除してください　　　　<END>
+<BEGIN>No more space    Delete files to clear up space                 <END>
+
+//<BEGIN>ロードするデータが　ありません　　　　　　　　　　　　　　　　　<END>
+<BEGIN>No data to load                                                 <END>
+
+//<BEGIN>削除するデータが　ありません　　　　　　　　　　　　　　　　　　<END>
+<BEGIN>                                                                <END>
+
+//<BEGIN>電源を切り　プロテクトスイッチをＯＦＦにしてください　　　　　　<END>
+<BEGIN>No data to delete                                               <END>
+
+//<BEGIN>電池を交換してください　　　　　　　　　　　　　　　　　　　　　<END>
+<BEGIN>Replace battery                                                 <END>
+
+//<BEGIN>これをロードすると　前のデータが消えてしまいますが　いいですか？<END>
+<BEGIN>Loading will replace current data. Ok?                          <END>
+
+//<BEGIN>　ロード　セーブ　削　除<END>
+<BEGIN> Load  Save  Delete    <END>
+
