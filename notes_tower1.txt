@@ -91,3 +91,10 @@ letters 58ffb
 058dcc (@58dc4) lookup table #006f char pos on name
 058db5 (@58d8f)  lookup table #0037 cursor box
 05929e remove letter
+05a439/2a439 table player selection
+05d913/2d913 table player numbers
+7e5460->660
+59280 transfersize for entry name
+04e1e9 (0x261e9) tilemap name entry
+05a420 load Star for empty name
+5dd98 4 letters?
