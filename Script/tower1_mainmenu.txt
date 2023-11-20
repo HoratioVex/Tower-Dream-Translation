@@ -145,7 +145,7 @@
 
 #W16($1FE5CC)
 //<BEGIN>　いれかえる人を　選んでください　　　　　<END>
-<BEGIN> Swap with whom?              <END>
+<BEGIN> Delete which player?         <END>
 
 //POINTER #24 @ $1FE5CE - STRING #24 @ $1FEA4E
 
@@ -355,7 +355,7 @@
 
 #W16($1FE612)
 //<BEGIN>　<NN>さんで　いいですか？<END>
-<BEGIN> Is <NN> correct?          <END>
+<BEGIN> Is <NN> playing?          <END>
 
 //POINTER #59 @ $1FE614 - STRING #59 @ $1FEF96
 
@@ -466,34 +466,34 @@
 <BEGIN>Yes         No          Profile                 <END>
 
 //<BEGIN>倉明けんた　　　１３才　　強さＤ人なつこくて素直　得意な作戦　　なんでも吸収合併勝率　　<END>
-<BEGIN>Leo Chapman Age:13 Skl:DHonest      Focus       Mergers     WR                          <END>
+<BEGIN>Leo Chapman Age:13 Skl:DHonest       Focus      Mergers     Win%                        <END>
 
 //<BEGIN>嵐山ユカ　　　　１１才　　強さＣ甘えん坊で移り気　得意な作戦　　ライン収入マニア勝率　　<END>
-<BEGIN>Zoe ValenciaAge:11 Skl:CFickle      Focus       Line fees   WR                          <END>
+<BEGIN>Zoe ValenciaAge:11 Skl:CFickle       Focus      Line fees   Win%                        <END>
 
 //<BEGIN>御手板丈二　　　１９才　　強さＡキザなひねくれ屋　得意な作戦　　とことんタワー　勝率　　<END>
-<BEGIN>Ace Kaiser  Age:19 Skl:AEccentric   Focus       Towers      WR                          <END>
+<BEGIN>Ace Kaiser  Age:19 Skl:AEccentric    Focus      Towers      Win%                        <END>
 
 //<BEGIN>有森まりも　　　１７才　　強さＢ強気でおおざっぱ　得意な作戦　　一直線２０階積み勝率　　<END>
-<BEGIN>Jessie RazorAge:17 Skl:BImpulsive   Focus       High Towers WR                          <END>
+<BEGIN>Jessie RazorAge:17 Skl:BImpulsive    Focus      High Towers Win%                        <END>
 
 //<BEGIN>西郷玉三郎　　　　５才　　強さＣ基本重視の堅実派　得意な作戦　　ひたすら２位狙い勝率　　<END>
-<BEGIN>Milo        Age: 5 Skl:CSolid       Focus       Slow build  WR                          <END>
+<BEGIN>Milo        Age: 5 Skl:CSolid        Focus      Not losing  Win%                        <END>
 
 //<BEGIN>金ヶ崎彦左ェ門　５２才　　強さＡずるがしこい中年　得意な作戦　　ケチケチ持久戦　勝率　　<END>
-<BEGIN>Walter SloanAge:52 Skl:ACunning     Focus       Attrition   WR                          <END>
+<BEGIN>Walter SloanAge:52 Skl:ACunning      Focus      Attrition   Win%                        <END>
 
 //<BEGIN>西尾はづみ　　　２３才　　強さＡ自尊心が強く派手　得意な作戦　　不思議はぐれ置き勝率　　<END>
-<BEGIN>Helen Bruno Age:23 Skl:AEgocentric  Focus       Mysterious  WR                          <END>
+<BEGIN>Helen Bruno Age:23 Skl:AEgocentric   Focus      Mysterious  Win%                        <END>
 
 //<BEGIN>宇宙意志　　　　４８億？才強さＤ正体不明の生命体　得意な作戦　　ノーガード戦法　勝率　　<END>
-<BEGIN>Xodiac      Age:?? Skl:DInscrutable Focus       All-In      WR                          <END>
+<BEGIN>Xodiac      Age:?? Skl:DInscrutable  Focus      All-In      Win%                        <END>
 
 //<BEGIN>海野ユデール　　　８才　　強さＢひょうきんで単純　得意な作戦　　合併直前からみ技勝率　　<END>
-<BEGIN>Squee BibbleAge: 8 Skl:BDroll       Focus       Sudden hit  WR                          <END>
+<BEGIN>Squee BibbleAge: 8 Skl:BDroll        Focus      Sudden hit  Win%                        <END>
 
 //<BEGIN>ゲームスタート　　　初期資金　　　　　Ｇ給料　　　　　　　Ｇマーカー　　　　　％<END>
-<BEGIN>Start Game   Init.Funds     G  Salary          Claim                  %         <END>
+<BEGIN>Start Game     Funds         GSalary        GClaim         %                    <END>
 
 //<BEGIN>タイムズスクエア残りマーカー<END>
 <BEGIN>Times Square Left Claims    <END>
@@ -551,4 +551,25 @@
 //Block Range: $2A439 - $2A478
 #JMP($2A439,$2A478)
 //<BEGIN>１　　　　　２　　　　　３　　　　　４　　　　　いれかえ　　<END>
-<BEGIN>1        2        3        4        Swap                            <END>
+<BEGIN>1        2        3        4        Erase                           <END>
+
+//BLOCK #004 NAME:		Erase Confirm 1
+//Block Range: $1FF1AE - $1FF34D
+#JMP($1FF1AE,$1FF34D)
+
+//<BEGIN>Nさんの　記録が　　　　　　　　<END>
+<BEGIN><NN>'s record                      <END>
+//<BEGIN>消えてしまいますが　いいですか？<END>
+<BEGIN>OK to delete?                   <END>
+//<BEGIN>Nさんの　記録を消しました　　　<END>
+<BEGIN><NN>'s record deleted              <END>
+//<BEGIN>　　　　　　　　　　　　　　　　<END>
+<BEGIN>                                <END>
+//<BEGIN>前に遊んだときの　記録が　　　　消えてしまいますが　いいですか？<END>
+<BEGIN>Game in progress        Ok to delete?                           <END>
+//<BEGIN>今まで遊んだ　すべての記録が　　消えてしまいますが　いいですか？<END>
+<BEGIN>Delete all player       profiles and saves?                     <END>
+//<BEGIN>すべての記録を　消しました　　　　　　　　　　　　　　　　　　　<END>
+<BEGIN>All profiles and saves  deleted                                 <END>
+//<BEGIN>実行中の　キャンペーンデータが　消えてしまいますが　いいですか？<END>
+<BEGIN>Campaign progress will  be lost.OK to delete?                   <END>
