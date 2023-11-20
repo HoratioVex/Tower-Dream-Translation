@@ -98,3 +98,12 @@ letters 58ffb
 04e1e9 (0x261e9) tilemap name entry
 05a420 load Star for empty name
 5dd98 4 letters?
+3fda0b tilemap player selection
+5d884 construct string for winrate number at 1ECA
+1ec4-1ec6: aa
+1ec5: 1st digit
+1ec7-1ec9:digits
+5e86f f0 -> insert player name into string
+
+5d7f9 construct stat strings for level select
+3fd768 tilemap level select
