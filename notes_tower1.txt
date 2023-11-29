@@ -107,3 +107,22 @@ letters 58ffb
 
 5d7f9 construct stat strings for level select
 3fd768 tilemap level select
+
+5882c construct players for level load
+81a8f3 (81aa51) checksums on vram
+
+819b93 name current player (819c21: 4 blank)
+80a11a write string for name
+80b7f1 construct glyphs for name in 315-3f8
+c103 write glyph with outline -> 339
+2b7 char counter odd/even
+80c27c for sjis in $0a -> address of char bitmap to $20
+
+81c314 load next turn msg (81c37c)
+8098e7 process msg string
+80a307 write char for msg window
+ 80c103 write to vram
+ 80a626 write vram 2d9 -> $24 (start a400/5200)
+80c1d4 char -> 2b9
+
+spceial case: 0a0d(LF), 01, 02... (player names), 1A (end?)
