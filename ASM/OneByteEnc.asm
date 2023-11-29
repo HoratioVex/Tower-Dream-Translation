@@ -119,4 +119,56 @@ sta $1eca
 rep #$20
 stz $1ecb
 jml $05d883
+
+org $5882c ;construct string for level load window
+lda #$aaaa ;init with space
+
+org $58837
+cpx #$0018 ;6*4 instead of 8*4 tiles
+
+org $58888 ;write 6 letters (COM)
+jml LevelLoadCom
+MultBy6: ;can't bitshift, help with table
+db $00,$06,$0C,$12
+org $588b0 ;write 6 letters (player)
+jml LevelLoadPly
+
+org $878081
+LevelLoadCom:
+bank $05
+tay
+sep #$20
+lda MultBy6,y
+tay
+lda #$06
+sta $12
+LLCLoop:
+lda $0588cc,x
+sta $1ec4,y
+inx
+iny
+dec $12
+bne LLCLoop
+rep #$20
+jml $588a0
+
+LevelLoadPly:
+tay
+sep #$20
+lda MultBy6,y
+tay
+lda #$06
+sta $12
+LLPLoop:
+lda $700028,x
+beq LLPSkip
+sta $1ec4,y
+LLPSkip:
+inx
+iny
+dec $12
+bne LLPLoop
+rep #$20
+jml $588ca
+
 nop #4

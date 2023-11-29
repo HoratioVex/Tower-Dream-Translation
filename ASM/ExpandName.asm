@@ -42,6 +42,8 @@ lda $878000,x
 
 org $58C3D ;write only 6 chars to save
 nop #7
+;lda $1e3e ;original
+;sta $70002e,x
 
 org $59464 ;space before name entry
 lda #$AAAA
