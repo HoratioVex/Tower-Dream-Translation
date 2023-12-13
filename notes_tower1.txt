@@ -125,4 +125,30 @@ c103 write glyph with outline -> 339
  80a626 write vram 2d9 -> $24 (start a400/5200)
 80c1d4 char -> 2b9
 
-spceial case: 0a0d(LF), 01, 02... (player names), 1A (end?)
+spceial case: 0d0a(LF), 01, 02... (player names), 1A (end?)
+speech bubble: 19/19/17 chars per line
+
+80af20 render scroll text (white)
+80d920-80d935 pointer list scroll text strings 1st half
+b0dfca-b0e075 pointer list scroll text 2nd half
+
+94fc57 master pointer list:
+pointer lists:
+#1  b0d800 
+#2  b0dfca scrolltext
+#3  b0e798
+#4  b0ef10
+#5  b0f4cc
+#6  b6d800
+#7  b6dfe0
+#8  b6e7ee
+#9  b6efdf
+#10 b1e800
+#11 b1efd6
+
+94fd6b some string?
+aef1d9 (0x1771D9) compressed dialog
+starts with pointer list (offest $8000)
+
+80b217 render char for prompt window
+
