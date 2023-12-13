@@ -469,7 +469,7 @@
 <BEGIN>Leo Chapman Age:13 Skl:DHonest       Focus      Mergers     Win%                        <END>
 
 //<BEGIN>嵐山ユカ　　　　１１才　　強さＣ甘えん坊で移り気　得意な作戦　　ライン収入マニア勝率　　<END>
-<BEGIN>Zoe ValenciaAge:11 Skl:CFickle       Focus      Line fees   Win%                        <END>
+<BEGIN>Zoe ValenciaAge:11 Skl:CFickle       Focus      Lane fees   Win%                        <END>
 
 //<BEGIN>御手板丈二　　　１９才　　強さＡキザなひねくれ屋　得意な作戦　　とことんタワー　勝率　　<END>
 <BEGIN>Ace Kaiser  Age:19 Skl:AEccentric    Focus      Towers      Win%                        <END>
@@ -496,28 +496,28 @@
 <BEGIN>Start Game     Funds         GSalary        GClaim         %                    <END>
 
 //<BEGIN>タイムズスクエア残りマーカー<END>
-<BEGIN>Times Square Left Claims    <END>
+<BEGIN>Times SquareLeft            <END>
 
 //<BEGIN>キングオブ東京　残りマーカー<END>
-<BEGIN>King of Tokyo    Left Claims<END>
+<BEGIN>K[in]g of TokyoLeft            <END>
 
 //<BEGIN>ボラボラ島　　　残りマーカー<END>
-<BEGIN>Bora Bora    Left   Claims  <END>
+<BEGIN>Bora Bora   Left            <END>
 
 //<BEGIN>香港ナイトツアー残りマーカー<END>
-<BEGIN>Hong Kong Nights  Left Claim<END>
+<BEGIN>HK Nights   Left            <END>
 
 //<BEGIN>アクム街１３番地残りマーカー<END>
-<BEGIN>Pumpkin St 13    Left Claim <END>
+<BEGIN>Pumpkin St  Left            <END>
 
 //<BEGIN>ラッキースター　残りマーカー<END>
-<BEGIN>Lucky Star   Left  Claim    <END>
+<BEGIN>Lucky Star  Left            <END>
 
 //<BEGIN>メレンゲの夢の国残りマーカー<END>
-<BEGIN>Candy Dreams   Left Claim   <END>
+<BEGIN>Candy DreamsLeft            <END>
 
 //<BEGIN>シャングリラ　　残りマーカー<END>
-<BEGIN>Shangri-La   Left   Claim   <END>
+<BEGIN>Shangri-La  Left            <END>
 
 //BLOCK #002 NAME:		Menu Entry TurboFile
 //Block Range: $1EE547 - $1EE73E
@@ -573,3 +573,9 @@
 <BEGIN>All profiles and saves  deleted                                 <END>
 //<BEGIN>実行中の　キャンペーンデータが　消えてしまいますが　いいですか？<END>
 <BEGIN>Campaign progress will  be lost.OK to delete?                   <END>
+
+//BLOCK #005 NAME:		Stat Strings 1
+//Block Range: $288CC - $28913
+#JMP($288CC,$28913)
+//ユカ　　けんた　ユデール宇宙意志彦左ェ門はづみ　まりも　丈二　　玉三郎　
+Zoe     Leo     Squee   Xodiac  Walter  Helen   Jessie  Ace     Milo   

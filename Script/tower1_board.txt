@@ -1,0 +1,2000 @@
+#VAR(Table, TABLE)
+#ADDTBL("sjis_ins.tbl", Table)
+#ACTIVETBL(Table)
+
+//GAME NAME:		Tower Dream (SFC) (Ingame)
+
+//BLOCK #007 NAME:		Scroll Text 1st half (end $59a6)
+
+//POINTER #0 @ $5920 - STRING #0 @ $5936
+
+#JMP($005936,$0059A6)
+#SMA("LOROM00")
+//CREATEPTR(MapBank, "LINEAR", $-8000, 16)
+
+#W16($5920)
+//ユカ「<E>
+Zoe:<E>
+
+//POINTER #1 @ $5922 - STRING #1 @ $593D
+
+#W16($5922)
+//けんた「<E>
+Leo:<E>
+
+//POINTER #2 @ $5924 - STRING #2 @ $5946
+
+#W16($5924)
+//ユデール「<E>
+Squee:<E>
+
+//POINTER #3 @ $5926 - STRING #3 @ $5951
+
+#W16($5926)
+//宇宙意志「<E>
+Xodiac:<E>
+
+//POINTER #4 @ $5928 - STRING #4 @ $595C
+
+#W16($5928)
+//彦左ェ門「<E>
+Walter:<E>
+
+//POINTER #5 @ $592A - STRING #5 @ $5967
+
+#W16($592A)
+//はづみ「<E>
+Helen:<E>
+
+//POINTER #6 @ $592C - STRING #6 @ $5970
+
+#W16($592C)
+//まりも「<E>
+Jessie:<E>
+
+//POINTER #7 @ $592E - STRING #7 @ $5979
+
+#W16($592E)
+//丈二「<E>
+Ace:<E>
+
+//POINTER #8 @ $5930 - STRING #8 @ $5980
+
+#W16($5930)
+//玉三郎「<E>
+Milo:<E>
+
+//POINTER #9 @ $5932 - STRING #9 @ $5989
+
+#W16($5932)
+//タクシーさん「<E>
+Tex:<E>
+
+//POINTER #10 @ $5934 - STRING #10 @ $5998
+
+#W16($5934)
+//チャンスさま「<E>
+R.N.Genie:<E>
+//---------------------------------------------------------------------------------------------------
+//BLOCK #008 NAME:		Master Table 01 (end $185fc9) Zoe Scroll
+#JMP($1858AC,$185FC9)
+
+//POINTER #0 @ $185800 - STRING #0 @ $1858AC
+
+#W16($185800)
+//えーと　だれのばん？<E>
+Um,whose turn is it?<E>
+
+//POINTER #1 @ $185802 - STRING #1 @ $1858C1
+
+#W16($185802)
+//きゃは　あたし　ユカでーす<E>
+Hi,my name is Zoe.<E>
+
+//POINTER #2 @ $185804 - STRING #2 @ $1858DC
+
+#W16($185804)
+//<S>さんの　ばんなのかー<E>
+Isn't it <S>'s turn?<E>
+
+//POINTER #3 @ $185806 - STRING #3 @ $1858F2
+
+#W16($185806)
+//ユカは　まだ　１１才・・<E>
+I'm only 11…<E>
+
+//POINTER #4 @ $185808 - STRING #4 @ $18590B
+
+#W16($185808)
+//アイスクリーム　たべたい<E>
+I wanna eat ice cream.<E>
+
+//POINTER #5 @ $18580A - STRING #5 @ $185924
+
+#W16($18580A)
+//チャンスさま　元気ー？<E>
+How are you,Mr.Genie?<E>
+
+//POINTER #6 @ $18580C - STRING #6 @ $18593B
+
+#W16($18580C)
+//<S>さん　元気ー？<E>
+How are you,<S>?<E>
+//POINTER #7 @ $18580E - STRING #7 @ $18594B
+
+#W16($18580E)
+//タクシーさん　こんにちわー<E>
+Hello,Mr.Taxi.<E>
+//POINTER #8 @ $185810 - STRING #8 @ $185966
+
+#W16($185810)
+//考えこんじゃってるのかな？<E>
+Are you thinking?<E>
+
+//POINTER #9 @ $185812 - STRING #9 @ $185981
+
+#W16($185812)
+//ぶーぶー<E>
+Tee hee…<E>
+//POINTER #10 @ $185814 - STRING #10 @ $18598A
+
+#W16($185814)
+//ユカ　ちょっとタイクツ<E>
+This is boring.<E>
+//POINTER #11 @ $185816 - STRING #11 @ $1859A1
+
+#W16($185816)
+//ねーってば　ねー<E>
+Hey,come on…<E>
+//POINTER #12 @ $185818 - STRING #12 @ $1859B2
+
+#W16($185818)
+//いい目が出たー・・かな？<E>
+Um,was this roll good?<E>
+//POINTER #13 @ $18581A - STRING #13 @ $1859CB
+
+#W16($18581A)
+//いえーい<E>
+Yay!<E>
+//POINTER #14 @ $18581C - STRING #14 @ $1859D4
+
+#W16($18581C)
+//れっつ　ごーごー<E>
+Let's go!<E>
+//POINTER #15 @ $18581E - STRING #15 @ $1859E5
+
+#W16($18581E)
+//ファイト！　<S>！<E>
+Go <S>! You can do it!<E>
+//POINTER #16 @ $185820 - STRING #16 @ $1859F5
+
+#W16($185820)
+//それいけー！<E>
+Hooray!<E>
+//POINTER #17 @ $185822 - STRING #17 @ $185A02
+
+#W16($185822)
+//まわりがうるさくて　ごめんネ<E>
+Sorry, I was too loud.<E>
+//POINTER #18 @ $185824 - STRING #18 @ $185A1F
+
+#W16($185824)
+//元気よく　出発ー！<E>
+Move on with a smile!<E>
+//POINTER #19 @ $185826 - STRING #19 @ $185A32
+
+#W16($185826)
+//どこに　たどり着くかな？<E>
+Where will I end up?<E>
+//POINTER #20 @ $185828 - STRING #20 @ $185A4B
+
+#W16($185828)
+//どうして　売っちゃうのー？？<E>
+Why would you sell it??<E>
+//POINTER #21 @ $18582A - STRING #21 @ $185A68
+
+#W16($18582A)
+//あーあ<E>
+AAAH!<E>
+//POINTER #22 @ $18582C - STRING #22 @ $185A6F
+
+#W16($18582C)
+//ねだんの７５％で　売れるのネ<E>
+Sold for 75%.<E>
+//POINTER #23 @ $18582E - STRING #23 @ $185A8C
+
+#W16($18582E)
+//売りすぎると　あとがつらいかも<E>
+It's tough if you sell too much.<E>
+//POINTER #24 @ $185830 - STRING #24 @ $185AAB
+
+#W16($185830)
+//貯金が　減っちゃったわね・・<E>
+My savings are gone…<E>
+//POINTER #25 @ $185832 - STRING #25 @ $185AC8
+
+#W16($185832)
+//かわいそすぎ・・<E>
+So cute…<E>
+//POINTER #26 @ $185834 - STRING #26 @ $185AD9
+
+#W16($185834)
+//タワーのラインって　高いのね<E>
+Towers are so expensive…<E>
+//POINTER #27 @ $185836 - STRING #27 @ $185AF6
+
+#W16($185836)
+//順位が　変わっちゃったかナ？<E>
+Has my rank changed?<E>
+//POINTER #28 @ $185838 - STRING #28 @ $185B13
+
+#W16($185838)
+//<S>さん　おきのどくー<E>
+Too bad,<S>.<E>
+//POINTER #29 @ $18583A - STRING #29 @ $185B27
+
+#W16($18583A)
+//所持金が　赤信号ヨー<E>
+I'm so low on money…<E>
+//POINTER #30 @ $18583C - STRING #30 @ $185B3C
+
+#W16($18583C)
+//けっこう　高いラインね<E>
+What a pricey lane.<E>
+//POINTER #31 @ $18583E - STRING #31 @ $185B53
+
+#W16($18583E)
+//まあ　中ぐらいの　出費ね<E>
+Affordable,I guess.<E>
+//POINTER #32 @ $185840 - STRING #32 @ $185B6C
+
+#W16($185840)
+//速攻　速攻！<E>
+Fast!<E>
+//POINTER #33 @ $185842 - STRING #33 @ $185B79
+
+#W16($185842)
+//嵐山ユカでーす<E>
+I'm Zoe Valencia.<E>
+//POINTER #34 @ $185844 - STRING #34 @ $185B88
+
+#W16($185844)
+//どこに　置くのかナ？<E>
+Now where to put it…<E>
+//POINTER #35 @ $185846 - STRING #35 @ $185B9D
+
+#W16($185846)
+//あっちかな　そっちかな<E>
+This way or that way?<E>
+//POINTER #36 @ $185848 - STRING #36 @ $185BB4
+
+#W16($185848)
+//どこに　置くのかしら<E>
+Where should I put it?<E>
+//POINTER #37 @ $18584A - STRING #37 @ $185BC9
+
+#W16($18584A)
+//あといくつ　置けるんだっけ？<E>
+How many can I put?<E>
+//POINTER #38 @ $18584C - STRING #38 @ $185BE6
+
+#W16($18584C)
+//やっほー<E>
+Yahoo!<E>
+//POINTER #39 @ $18584E - STRING #39 @ $185BEF
+
+#W16($18584E)
+//どうするの？<E>
+What to do?<E>
+//POINTER #40 @ $185850 - STRING #40 @ $185BFC
+
+#W16($185850)
+//ランドマークを　どうぞ！<E>
+Claim tile please!<E>
+//POINTER #41 @ $185852 - STRING #41 @ $185C15
+
+#W16($185852)
+//おき　おき<E>
+Okay,okay.<E>
+//POINTER #42 @ $185854 - STRING #42 @ $185C20
+
+#W16($185854)
+//マーカー１３コで　ウッボーだお<E>
+13 claims,now it's safe!<E>
+//POINTER #43 @ $185856 - STRING #43 @ $185C3F
+
+#W16($185856)
+//もう　そこは　つぶれないのね<E>
+It can't disappear anymore.<E>
+//POINTER #44 @ $185858 - STRING #44 @ $185C5C
+
+#W16($185858)
+//見ていて　あきないわ<E>
+I'm hooked on this view.<E>
+//POINTER #45 @ $18585A - STRING #45 @ $185C71
+
+#W16($18585A)
+//いま総合トップは誰？<E>
+Who's in the lead?<E>
+//POINTER #46 @ $18585C - STRING #46 @ $185C86
+
+#W16($18585C)
+//どのへんが　よさそう？<E>
+Which one's better?<E>
+//POINTER #47 @ $18585E - STRING #47 @ $185C9D
+
+#W16($18585E)
+//あっちの方がいいんじゃない？<E>
+Maybe it's better over there?<E>
+//POINTER #48 @ $185860 - STRING #48 @ $185CBA
+
+#W16($185860)
+//ライントップ狙いかしら？<E>
+Do you want to own the lane?<E>
+//POINTER #49 @ $185862 - STRING #49 @ $185CD3
+
+#W16($185862)
+//ところで　あたしはユカでーす<E>
+By the way,my name is Zoe.<E>
+//POINTER #50 @ $185864 - STRING #50 @ $185CF0
+
+#W16($185864)
+//ラインは　チェックした？<E>
+Did you check the lane?<E>
+//POINTER #51 @ $185866 - STRING #51 @ $185D09
+
+#W16($185866)
+//がんばってねー<E>
+Good luck.<E>
+//POINTER #52 @ $185868 - STRING #52 @ $185D18
+
+#W16($185868)
+//たて　たて<E>
+It's been built.<E>
+//vertical??
+//POINTER #53 @ $18586A - STRING #53 @ $185D23
+
+#W16($18586A)
+//あそこは　ほっておくの？<E>
+Can I leave it there?<E>
+//POINTER #54 @ $18586C - STRING #54 @ $185D3C
+
+#W16($18586C)
+//給料　いくらだった？<E>
+How much was your salary?<E>
+//POINTER #55 @ $18586E - STRING #55 @ $185D51
+
+#W16($18586E)
+//どしたの　どしたの？<E>
+What's going on?<E>
+//POINTER #56 @ $185870 - STRING #56 @ $185D66
+
+#W16($185870)
+//ふつうの給料の　半分ネ<E>
+Half of normal salary.<E>
+//POINTER #57 @ $185872 - STRING #57 @ $185D7D
+
+#W16($185872)
+//ようこそ　ウェルカム<E>
+Nice to see you.<E>
+//POINTER #58 @ $185874 - STRING #58 @ $185D92
+
+#W16($185874)
+//もうかっちゃたわね！<E>
+Oh,that was profitable.<E>
+//POINTER #59 @ $185876 - STRING #59 @ $185DA7
+
+#W16($185876)
+//意外にうれしい　現金収入<E>
+Some lucky income!<E>
+//POINTER #60 @ $185878 - STRING #60 @ $185DC0
+
+#W16($185878)
+//いいもの　もらったわね！<E>
+Good for you!<E>
+//POINTER #61 @ $18587A - STRING #61 @ $185DD9
+
+#W16($18587A)
+//ユカも　バナナ食べたーい<E>
+I want a banana,too!<E>
+//POINTER #62 @ $18587C - STRING #62 @ $185DF2
+
+#W16($18587C)
+//<S>さん　お休みー！<E>
+Good night,<S>.<E>
+//POINTER #63 @ $18587E - STRING #63 @ $185E04
+
+#W16($18587E)
+//ひと息　入れましょ<E>
+Let's take a break.<E>
+//POINTER #64 @ $185880 - STRING #64 @ $185E17
+
+#W16($185880)
+//ぴんちっち<E>
+Drat.<E>
+//POINTER #65 @ $185882 - STRING #65 @ $185E22
+
+#W16($185882)
+//てなわけでしたー<E>
+And that was that.<E>
+//POINTER #66 @ $185884 - STRING #66 @ $185E33
+
+#W16($185884)
+//せっかくなのにねー<E>
+That was tough.<E>
+//POINTER #67 @ $185886 - STRING #67 @ $185E46
+
+#W16($185886)
+//いいもの　もらったわね<E>
+Good for you.<E>
+//POINTER #68 @ $185888 - STRING #68 @ $185E5D
+
+#W16($185888)
+//<$07>フロア？<E>
+<$07> floors?<E>
+//POINTER #69 @ $18588A - STRING #69 @ $185E67
+
+#W16($18588A)
+//うわー　すごいなー<E>
+Wow,that's amazing.<E>
+//POINTER #70 @ $18588C - STRING #70 @ $185E7A
+
+#W16($18588C)
+//<S>さん　大もうけだおー<E>
+You made a lot of money,<S>.<E>
+//POINTER #71 @ $18588E - STRING #71 @ $185E90
+
+#W16($18588E)
+//<S>さんのものかー<E>
+Is this <S>'s?<E>
+//POINTER #72 @ $185890 - STRING #72 @ $185EA0
+
+#W16($185890)
+//きゃははっ<E>
+Ha ha ha!<E>
+//POINTER #73 @ $185892 - STRING #73 @ $185EAB
+
+#W16($185892)
+//らっきっき<E>
+Lucky!<E>
+//POINTER #74 @ $185894 - STRING #74 @ $185EB6
+
+#W16($185894)
+//えへへっ　おもしろーい<E>
+Heh.Interesting.<E>
+//POINTER #75 @ $185896 - STRING #75 @ $185ECD
+
+#W16($185896)
+//あんなところに・・<E>
+There…<E>
+//POINTER #76 @ $185898 - STRING #76 @ $185EE0
+
+#W16($185898)
+//ユカも　もらい泣きしそ・・<E>
+I'm gonna cry too…<E>
+//POINTER #77 @ $18589A - STRING #77 @ $185EFB
+
+#W16($18589A)
+//<S>さん　次はがんばって<E>
+Better luck next time,<S>.<E>
+//POINTER #78 @ $18589C - STRING #78 @ $185F11
+
+#W16($18589C)
+//元値の　２５％になっちゃうのね<E>
+That's 25% of the buying price.<E>
+//POINTER #79 @ $18589E - STRING #79 @ $185F30
+
+#W16($18589E)
+//あー　きつそー<E>
+Ah,so close.<E>
+//POINTER #80 @ $1858A0 - STRING #80 @ $185F3F
+
+#W16($1858A0)
+//つぶしちゃったのねー<E>
+Looks like you lost.<E>
+//POINTER #81 @ $1858A2 - STRING #81 @ $185F54
+
+#W16($1858A2)
+//とっても　成長したなー<E>
+I'm almost grown up!<E>
+//POINTER #82 @ $1858A4 - STRING #82 @ $185F6B
+
+#W16($1858A4)
+//いつのまに　こんなことに・・<E>
+How could this happen?<E>
+//POINTER #83 @ $1858A6 - STRING #83 @ $185F88
+
+#W16($1858A6)
+//わーい　合体だー！<E>
+Wow,a merger!<E>
+//POINTER #84 @ $1858A8 - STRING #84 @ $185F9B
+
+#W16($1858A8)
+//<S>さん　かっこいー<E>
+<S> is so cool.<E>
+//POINTER #85 @ $1858AA - STRING #85 @ $185FAD
+
+#W16($1858AA)
+//次はユカも　ゲームにまぜてね<E>
+I wanna play in next round too!<E>
+
+//---------------------------------------------------------------------------------------------------
+//BLOCK #009 NAME:		Master Table 02 (end $186797)
+#JMP($186076,$186797)
+//POINTER #0 @ $185FCA - STRING #0 @ $186076
+
+#W16($185FCA)
+//<S>さんの　ばんだっけ<E>
+<S>'s turn.<E>
+//POINTER #1 @ $185FCC - STRING #1 @ $18608A
+
+#W16($185FCC)
+//んーと　んーと・・<E>
+Hmmm…<E>
+//POINTER #2 @ $185FCE - STRING #2 @ $18609D
+
+#W16($185FCE)
+//こうなって　ああなって・・<E>
+It is what it is.<E>
+//POINTER #3 @ $185FD0 - STRING #3 @ $1860B8
+
+#W16($185FD0)
+//今度　ぼくも　まぜてよね<E>
+I'll play in next round too,ok?<E>
+//POINTER #4 @ $185FD2 - STRING #4 @ $1860D1
+
+#W16($185FD2)
+//ん？　どしたの　<S>さん<E>
+Huh?What's up,<S>.<E>
+//POINTER #5 @ $185FD4 - STRING #5 @ $1860E7
+
+#W16($185FD4)
+//おやつ　たべたいなー<E>
+I want a snack.<E>
+//POINTER #6 @ $185FD6 - STRING #6 @ $1860FC
+
+#W16($185FD6)
+//ＳＴＡＲＴで　順位が見れるヨ<E>
+START to see the rankings.<E>
+//POINTER #7 @ $185FD8 - STRING #7 @ $186119
+
+#W16($185FD8)
+//<S>さん　タクシーかあ<E>
+<S>,want a ride?<E>
+//POINTER #8 @ $185FDA - STRING #8 @ $18612D
+
+#W16($185FDA)
+//<S>さん　はやくうー<E>
+<S>,hurry up!<E>
+//POINTER #9 @ $185FDC - STRING #9 @ $18613F
+
+#W16($185FDC)
+//<S>さん　どしたの？<E>
+<S>,what's wrong?<E>
+//POINTER #10 @ $185FDE - STRING #10 @ $186151
+
+#W16($185FDE)
+//しーん・・<E>
+Careful now…<E>
+//POINTER #11 @ $185FE0 - STRING #11 @ $18615C
+
+#W16($185FE0)
+//ふあー・・<E>
+Whoa…<E>
+//POINTER #12 @ $185FE2 - STRING #12 @ $186167
+
+#W16($185FE2)
+//どんどん　いこうよ！<E>
+Let's keep going!<E>
+//POINTER #13 @ $185FE4 - STRING #13 @ $18617C
+
+#W16($185FE4)
+//すすめ　すすめーっ<E>
+Let' go!<E>
+//POINTER #14 @ $185FE6 - STRING #14 @ $18618F
+
+#W16($185FE6)
+//あしたは　雨かも<E>
+It might rain tomorrow.<E>
+//POINTER #15 @ $185FE8 - STRING #15 @ $1861A0
+
+#W16($185FE8)
+//おなか　へったー<E>
+I'm hungry.<E>
+//POINTER #16 @ $185FEA - STRING #16 @ $1861B1
+
+#W16($185FEA)
+//チャンスさんは　どこ？<E>
+Where's Genie?<E>
+//POINTER #17 @ $185FEC - STRING #17 @ $1861C8
+
+#W16($185FEC)
+//はっくしょん<E>
+*ACHOO*<E>
+//POINTER #18 @ $185FEE - STRING #18 @ $1861D5
+
+#W16($185FEE)
+//いってらっしゃーい<E>
+Good day!<E>
+//POINTER #19 @ $185FF0 - STRING #19 @ $1861E8
+
+#W16($185FF0)
+//気をつけてねー<E>
+Watch out!<E>
+//POINTER #20 @ $185FF2 - STRING #20 @ $1861F7
+
+#W16($185FF2)
+//えー　売っちゃうのー<E>
+Oh,you're selling.<E>
+//POINTER #21 @ $185FF4 - STRING #21 @ $18620C
+
+#W16($185FF4)
+//なんと！　売却かー<E>
+Wow!Selling it,huh?<E>
+//POINTER #22 @ $185FF6 - STRING #22 @ $18621F
+
+#W16($185FF6)
+//売るとソンだけど　いいの？<E>
+Might be wrong to sell…<E>
+//POINTER #23 @ $185FF8 - STRING #23 @ $18623A
+
+#W16($185FF8)
+//ビルが低く　なっちゃうね<E>
+This building will be small.<E>
+//POINTER #24 @ $185FFA - STRING #24 @ $186253
+
+#W16($185FFA)
+//うわーっ　やっちゃったー<E>
+Wow,I did it!<E>
+//POINTER #25 @ $185FFC - STRING #25 @ $18626C
+
+#W16($185FFC)
+//<S>さん　ふとっぱらー<E>
+<S> is so fat.<E>
+//POINTER #26 @ $185FFE - STRING #26 @ $186280
+
+#W16($185FFE)
+//どひゃー　そこ高いねー<E>
+Whoa,that's expensive.<E>
+//POINTER #27 @ $186000 - STRING #27 @ $186297
+
+#W16($186000)
+//かなり　キョーレツだねー<E>
+That's pretty intense.<E>
+//POINTER #28 @ $186002 - STRING #28 @ $1862B0
+
+#W16($186002)
+//お金がなくなっちゃったね・・<E>
+I'm out of money…<E>
+//POINTER #29 @ $186004 - STRING #29 @ $1862CD
+
+#W16($186004)
+//<S>さん　おおはまり・・<E>
+<S>,that's huge!<E>
+//POINTER #30 @ $186006 - STRING #30 @ $1862E3
+
+#W16($186006)
+//どんまい　どんまい！<E>
+Calm down!<E>
+//POINTER #31 @ $186008 - STRING #31 @ $1862F8
+
+#W16($186008)
+//ちょっと　つらそー・・・<E>
+It's a bit tough…<E>
+//POINTER #32 @ $18600A - STRING #32 @ $186311
+
+#W16($18600A)
+//ちょっとずつ　取られてるね<E>
+Taken piece by piece…<E>
+//POINTER #33 @ $18600C - STRING #33 @ $18632C
+
+#W16($18600C)
+//安くてよかったね！<E>
+Glad it was cheap!<E>
+//POINTER #34 @ $18600E - STRING #34 @ $18633F
+
+#W16($18600E)
+//どこかな　どこかなーっ<E>
+I wonder where…<E>
+//POINTER #35 @ $186010 - STRING #35 @ $186356
+
+#W16($186010)
+//マーカー　置けるの？<E>
+Can I place a tile?<E>
+//POINTER #36 @ $186012 - STRING #36 @ $18636B
+
+#W16($186012)
+//あと何枚　おけるのかなー<E>
+Can I have more?<E>
+//POINTER #37 @ $186014 - STRING #37 @ $186384
+
+#W16($186014)
+//むこうが　有利なんじゃない？<E>
+Is the other side better?<E>
+//POINTER #38 @ $186016 - STRING #38 @ $1863A1
+
+#W16($186016)
+//ビジネスチャンス　かな？<E>
+A business opportunity?<E>
+//POINTER #39 @ $186018 - STRING #39 @ $1863BA
+
+#W16($186018)
+//<S>さん　やってるねー<E>
+<S>,you're doing great.<E>
+//POINTER #40 @ $18601A - STRING #40 @ $1863CE
+
+#W16($18601A)
+//そっちは　まずいんじゃない？<E>
+Isn't that bad?<E>
+//POINTER #41 @ $18601C - STRING #41 @ $1863EB
+
+#W16($18601C)
+//なんか　見落としてない？<E>
+Did I miss something?<E>
+//POINTER #42 @ $18601E - STRING #42 @ $186404
+
+#W16($18601E)
+//ウッボーだあーい<E>
+Finally safe!<E>
+//POINTER #43 @ $186020 - STRING #43 @ $186415
+
+#W16($186020)
+//レベル１３を　超えちゃったね<E>
+You've passed 13 levels.<E>
+//POINTER #44 @ $186022 - STRING #44 @ $186432
+
+#W16($186022)
+//なになに　誰がトップ？<E>
+What?Who's the owner?<E>
+//POINTER #45 @ $186024 - STRING #45 @ $186449
+
+#W16($186024)
+//おいこせ　おいこせー<E>
+Overtaking!<E>
+//POINTER #46 @ $186026 - STRING #46 @ $18645E
+
+#W16($186026)
+//やっぱ　増築しようよー！<E>
+Sure,let's expand!<E>
+//POINTER #47 @ $186028 - STRING #47 @ $186477
+
+#W16($186028)
+//どんどん高いビル　たてよう！<E>
+Let's build even higher!<E>
+//POINTER #48 @ $18602A - STRING #48 @ $186494
+
+#W16($18602A)
+//たてようたてよう！<E>
+Build more!<E>
+//POINTER #49 @ $18602C - STRING #49 @ $1864A7
+
+#W16($18602C)
+//たてよう！<E>
+Let's build!<E>
+//POINTER #50 @ $18602E - STRING #50 @ $1864B2
+
+#W16($18602E)
+//おなか　へったー<E>
+I'm hungry.<E>
+//POINTER #51 @ $186030 - STRING #51 @ $1864C3
+
+#W16($186030)
+//おいつけー　おいこせー<E>
+Hey,hurry up!<E>
+//POINTER #52 @ $186032 - STRING #52 @ $1864DA
+
+#W16($186032)
+//Ｌボタンで　データ画面だよ<E>
+Press L for the data screen.<E>
+//POINTER #53 @ $186034 - STRING #53 @ $1864F5
+
+#W16($186034)
+//あしたは　晴れかな？<E>
+Will it be sunny tomorrow?<E>
+//POINTER #54 @ $186036 - STRING #54 @ $18650A
+
+#W16($186036)
+//ありゃっ　サラリー？<E>
+That's the salary?<E>
+//POINTER #55 @ $186038 - STRING #55 @ $18651F
+
+#W16($186038)
+//あははー　ぴたり停止だって<E>
+Haha,it stopped suddenly.<E>
+//POINTER #56 @ $18603A - STRING #56 @ $18653A
+
+#W16($18603A)
+//やっほー<E>
+Yahoo!<E>
+//POINTER #57 @ $18603C - STRING #57 @ $186543
+
+#W16($18603C)
+//ウェルカムだー！<E>
+Welcome!<E>
+//POINTER #58 @ $18603E - STRING #58 @ $186554
+
+#W16($18603E)
+//お金かあ・・<E>
+So much money…<E>
+//POINTER #59 @ $186040 - STRING #59 @ $186561
+
+#W16($186040)
+//やったね　<S>さん<E>
+Way to go,<S>.<E>
+//POINTER #60 @ $186042 - STRING #60 @ $186571
+
+#W16($186042)
+//迷惑なものが　あたっちゃったね<E>
+That was annoying.<E>
+//POINTER #61 @ $186044 - STRING #61 @ $186590
+
+#W16($186044)
+//なんだー　バナナなのー<E>
+Oh,a banana.<E>
+//POINTER #62 @ $186046 - STRING #62 @ $1865A7
+
+#W16($186046)
+//あはは　おつかれさまー<E>
+Haha,sweet dreams.<E>
+//POINTER #63 @ $186048 - STRING #63 @ $1865BE
+
+#W16($186048)
+//おやすみー<E>
+Good night.<E>
+//POINTER #64 @ $18604A - STRING #64 @ $1865C9
+
+#W16($18604A)
+//はい次のひとー<E>
+Right.Next player.<E>
+//POINTER #65 @ $18604C - STRING #65 @ $1865D8
+
+#W16($18604C)
+//てなわけでした！<E>
+And that was that!<E>
+//POINTER #66 @ $18604E - STRING #66 @ $1865E9
+
+#W16($18604E)
+//残念だったねー<E>
+Too bad.<E>
+//POINTER #67 @ $186050 - STRING #67 @ $1865F8
+
+#W16($186050)
+//ソンでは　ないよね<E>
+No big deal.<E>
+//POINTER #68 @ $186052 - STRING #68 @ $18660B
+
+#W16($186052)
+//なんか　いまいちだね<E>
+That's quite bad.<E>
+//POINTER #69 @ $186054 - STRING #69 @ $186620
+
+#W16($186054)
+//ずいぶん　もうかったね<E>
+Quite profitable.<E>
+//POINTER #70 @ $186056 - STRING #70 @ $186637
+
+#W16($186056)
+//どこかトップが　とれるかな<E>
+Must be some lane I can take over.<E>
+//POINTER #71 @ $186058 - STRING #71 @ $186652
+
+#W16($186058)
+//どひゃー<E>
+Whoa!<E>
+//POINTER #72 @ $18605A - STRING #72 @ $18665B
+
+#W16($18605A)
+//運がよければ　大もうけだね<E>
+Great business opportunity!<E>
+//POINTER #73 @ $18605C - STRING #73 @ $186676
+
+#W16($18605C)
+//運が悪ければ　１回休みと同じ<E>
+It's like short vacation.<E>
+//POINTER #74 @ $18605E - STRING #74 @ $186693
+
+#W16($18605E)
+//あっち　いっちゃったの？<E>
+Going over there…?<E>
+//POINTER #75 @ $186060 - STRING #75 @ $1866AC
+
+#W16($186060)
+//とんだー<E>
+Oof<E>
+//POINTER #76 @ $186062 - STRING #76 @ $1866B5
+
+#W16($186062)
+//<S>さん　つらそー<E>
+Tough for you,<S>.<E>
+//POINTER #77 @ $186064 - STRING #77 @ $1866C5
+
+#W16($186064)
+//あー　売りになっちゃったかー<E>
+Oh,it's sold?<E>
+//POINTER #78 @ $186066 - STRING #78 @ $1866E2
+
+#W16($186066)
+//ファイト　ファイト！<E>
+Go,go!<E>
+//POINTER #79 @ $186068 - STRING #79 @ $1866F7
+
+#W16($186068)
+//なんか　さびしいね・・<E>
+Quite lonely…<E>
+//POINTER #80 @ $18606A - STRING #80 @ $18670E
+
+#W16($18606A)
+//やったねー<E>
+You did it!<E>
+//POINTER #81 @ $18606C - STRING #81 @ $186719
+
+#W16($18606C)
+//やっぱり　つぶしたのかー<E>
+Did you crush it?<E>
+//POINTER #82 @ $18606E - STRING #82 @ $186732
+
+#W16($18606E)
+//だれに　ボーナスなのー？<E>
+Who gets the bonus?<E>
+//POINTER #83 @ $186070 - STRING #83 @ $18674B
+
+#W16($186070)
+//まだ　早かったんじゃない？<E>
+Still too early,right?<E>
+//POINTER #84 @ $186072 - STRING #84 @ $186766
+
+#W16($186072)
+//ボーナスで　順位が変わりそう<E>
+Bonuses will shake up the rankings.<E>
+//POINTER #85 @ $186074 - STRING #85 @ $186783
+
+#W16($186074)
+//おわりだ　おわりだー<E>
+It's so over.<E>
+//--------------------------------------------------------------------------
+//BLOCK #010 NAME:		Master Table 03 (end $186F0F)
+#JMP($186844,$186F0F)
+//POINTER #0 @ $186798 - STRING #0 @ $186844
+
+#W16($186798)
+//ユデールです　どもー<E>
+I'm Squee! Hi!<E>
+//POINTER #1 @ $18679A - STRING #1 @ $186859
+
+#W16($18679A)
+//ひとのゲームは　参考になるね<E>
+How you play says a lot about you.<E>
+//POINTER #2 @ $18679C - STRING #2 @ $186876
+
+#W16($18679C)
+//われは　海の王子　ユデール<E>
+//POINTER #3 @ $18679E - STRING #3 @ $186891
+
+#W16($18679E)
+//いやー　面白いですねー<E>
+//POINTER #4 @ $1867A0 - STRING #4 @ $1868A8
+
+#W16($1867A0)
+//誰の　番ですかー<E>
+//POINTER #5 @ $1867A2 - STRING #5 @ $1868B9
+
+#W16($1867A2)
+//がやがやがや<E>
+//POINTER #6 @ $1867A4 - STRING #6 @ $1868C6
+
+#W16($1867A4)
+//<S>さん　がんばれー<E>
+//POINTER #7 @ $1867A6 - STRING #7 @ $1868D8
+
+#W16($1867A6)
+//タクシー　乗ってるですかー<E>
+//POINTER #8 @ $1867A8 - STRING #8 @ $1868F3
+
+#W16($1867A8)
+//ぶくぶくぶく・・<E>
+//POINTER #9 @ $1867AA - STRING #9 @ $186904
+
+#W16($1867AA)
+//ユデール　まちどおしい<E>
+//POINTER #10 @ $1867AC - STRING #10 @ $18691B
+
+#W16($1867AC)
+//なにしてる　ですかー<E>
+//POINTER #11 @ $1867AE - STRING #11 @ $186930
+
+#W16($1867AE)
+//ぷしゅー！！<E>
+//POINTER #12 @ $1867B0 - STRING #12 @ $18693D
+
+#W16($1867B0)
+//<$07>が　出たですかー<E>
+//POINTER #13 @ $1867B2 - STRING #13 @ $18694F
+
+#W16($1867B2)
+//どこまで　行くですかー<E>
+//POINTER #14 @ $1867B4 - STRING #14 @ $186966
+
+#W16($1867B4)
+//いってらっさい<E>
+//POINTER #15 @ $1867B6 - STRING #15 @ $186975
+
+#W16($1867B6)
+//ほほー<E>
+//POINTER #16 @ $1867B8 - STRING #16 @ $18697C
+
+#W16($1867B8)
+//ゴー　ゴー<E>
+//POINTER #17 @ $1867BA - STRING #17 @ $186987
+
+#W16($1867BA)
+//さて　行き先は・・<E>
+//POINTER #18 @ $1867BC - STRING #18 @ $18699A
+
+#W16($1867BC)
+//<S>さん　いけいけー<E>
+//POINTER #19 @ $1867BE - STRING #19 @ $1869AC
+
+#W16($1867BE)
+//ひょっとして・・<E>
+//POINTER #20 @ $1867C0 - STRING #20 @ $1869BD
+
+#W16($1867C0)
+//このひとの作戦　参考になるです<E>
+//POINTER #21 @ $1867C2 - STRING #21 @ $1869DC
+
+#W16($1867C2)
+//こんど　マネしてみるです<E>
+//POINTER #22 @ $1867C4 - STRING #22 @ $1869F5
+
+#W16($1867C4)
+//旅の　ご無事を　祈りまーす<E>
+//POINTER #23 @ $1867C6 - STRING #23 @ $186A10
+
+#W16($1867C6)
+//いよいよ　勝負ですかー<E>
+//POINTER #24 @ $1867C8 - STRING #24 @ $186A27
+
+#W16($1867C8)
+//<S>さん　ショックねー<E>
+//POINTER #25 @ $1867CA - STRING #25 @ $186A3B
+
+#W16($1867CA)
+//がんばりましょねー<E>
+//POINTER #26 @ $1867CC - STRING #26 @ $186A4E
+
+#W16($1867CC)
+//ユデール　おどろきー<E>
+//POINTER #27 @ $1867CE - STRING #27 @ $186A63
+
+#W16($1867CE)
+//大変でしたですねー<E>
+//POINTER #28 @ $1867D0 - STRING #28 @ $186A76
+
+#W16($1867D0)
+//あいやー<E>
+//POINTER #29 @ $1867D2 - STRING #29 @ $186A7F
+
+#W16($1867D2)
+//ユデールも　びっくり<E>
+//POINTER #30 @ $1867D4 - STRING #30 @ $186A94
+
+#W16($1867D4)
+//ほへー<E>
+//POINTER #31 @ $1867D6 - STRING #31 @ $186A9B
+
+#W16($1867D6)
+//けっこう　痛そうな・・<E>
+//POINTER #32 @ $1867D8 - STRING #32 @ $186AB2
+
+#W16($1867D8)
+//安くて　よかったですねー<E>
+//POINTER #33 @ $1867DA - STRING #33 @ $186ACB
+
+#W16($1867DA)
+//意外に　堅実ですねー<E>
+//POINTER #34 @ $1867DC - STRING #34 @ $186AE0
+
+#W16($1867DC)
+//勉強に　なりますー<E>
+//POINTER #35 @ $1867DE - STRING #35 @ $186AF3
+
+#W16($1867DE)
+//どこでも　良さそうな・・<E>
+//POINTER #36 @ $1867E0 - STRING #36 @ $186B0C
+
+#W16($1867E0)
+//あちこち　選べますねー<E>
+//POINTER #37 @ $1867E2 - STRING #37 @ $186B23
+
+#W16($1867E2)
+//ぽちっとな<E>
+//POINTER #38 @ $1867E4 - STRING #38 @ $186B2E
+
+#W16($1867E4)
+//どんどん　置きましょう<E>
+//POINTER #39 @ $1867E6 - STRING #39 @ $186B45
+
+#W16($1867E6)
+//ライン収入　狙うですか？<E>
+//POINTER #40 @ $1867E8 - STRING #40 @ $186B5E
+
+#W16($1867E8)
+//置ける場所　あるですかー<E>
+//POINTER #41 @ $1867EA - STRING #41 @ $186B77
+
+#W16($1867EA)
+//ここが勝敗の　わかめとこんぶ<E>
+//POINTER #42 @ $1867EC - STRING #42 @ $186B94
+
+#W16($1867EC)
+//ウッボー　ウッボー<E>
+//POINTER #43 @ $1867EE - STRING #43 @ $186BA7
+
+#W16($1867EE)
+//ウボウボ　ウッボー<E>
+//POINTER #44 @ $1867F0 - STRING #44 @ $186BBA
+
+#W16($1867F0)
+//熱い戦いですねー<E>
+//POINTER #45 @ $1867F2 - STRING #45 @ $186BCB
+
+#W16($1867F2)
+//手に汗　にぎるですー<E>
+//POINTER #46 @ $1867F4 - STRING #46 @ $186BE0
+
+#W16($1867F4)
+//増築を　どうぞー<E>
+//POINTER #47 @ $1867F6 - STRING #47 @ $186BF1
+
+#W16($1867F6)
+//どこに　建てますのかー<E>
+//POINTER #48 @ $1867F8 - STRING #48 @ $186C08
+
+#W16($1867F8)
+//どんどん　行くですよー<E>
+//POINTER #49 @ $1867FA - STRING #49 @ $186C1F
+
+#W16($1867FA)
+//街がにぎやかに　なりますねー<E>
+//POINTER #50 @ $1867FC - STRING #50 @ $186C3C
+
+#W16($1867FC)
+//やっぱり　そこでしょー<E>
+//POINTER #51 @ $1867FE - STRING #51 @ $186C53
+
+#W16($1867FE)
+//コツコツ　やりましょー<E>
+//POINTER #52 @ $186800 - STRING #52 @ $186C6A
+
+#W16($186800)
+//私はユデール　きみは<BEGIN>早く　きめましょー<E>
+//POINTER #53 @ $186802 - STRING #53 @ $186C80
+
+#W16($186802)
+//早く　きめましょー<E>
+//POINTER #54 @ $186804 - STRING #54 @ $186C93
+
+#W16($186804)
+//ほえー<E>
+//POINTER #55 @ $186806 - STRING #55 @ $186C9A
+
+#W16($186806)
+//お金入って　よかったですねー<E>
+//POINTER #56 @ $186808 - STRING #56 @ $186CB7
+
+#W16($186808)
+//ん？<E>
+//POINTER #57 @ $18680A - STRING #57 @ $186CBC
+
+#W16($18680A)
+//お金入って　うれしいでしょー<E>
+//POINTER #58 @ $18680C - STRING #58 @ $186CD9
+
+#W16($18680C)
+//ぷくぷく<E>
+//POINTER #59 @ $18680E - STRING #59 @ $186CE2
+
+#W16($18680E)
+//へーえ<E>
+//POINTER #60 @ $186810 - STRING #60 @ $186CE9
+
+#W16($186810)
+//んにゃ？<E>
+//POINTER #61 @ $186812 - STRING #61 @ $186CF2
+
+#W16($186812)
+//ユデール　こういうの　好き<E>
+//POINTER #62 @ $186814 - STRING #62 @ $186D0D
+
+#W16($186814)
+//この人　ユデールより弱いかも<E>
+//POINTER #63 @ $186816 - STRING #63 @ $186D2A
+
+#W16($186816)
+//なんと　そんなところに・・<E>
+//POINTER #64 @ $186818 - STRING #64 @ $186D45
+
+#W16($186818)
+//ピンチ　ですかー？<E>
+//POINTER #65 @ $18681A - STRING #65 @ $186D58
+
+#W16($18681A)
+//グッドラックですー<E>
+//POINTER #66 @ $18681C - STRING #66 @ $186D6B
+
+#W16($18681C)
+//ユデール　同情・・<E>
+//POINTER #67 @ $18681E - STRING #67 @ $186D7E
+
+#W16($18681E)
+//ちょっとは　トクしましたねー<E>
+//POINTER #68 @ $186820 - STRING #68 @ $186D9B
+
+#W16($186820)
+//まあ　よろこんで　よいのでは<E>
+//POINTER #69 @ $186822 - STRING #69 @ $186DB8
+
+#W16($186822)
+//ユデール　目が点<E>
+//POINTER #70 @ $186824 - STRING #70 @ $186DC9
+
+#W16($186824)
+//濡れ手でアワぶくぶく<E>
+//POINTER #71 @ $186826 - STRING #71 @ $186DDE
+
+#W16($186826)
+//ぼー・・<E>
+//POINTER #72 @ $186828 - STRING #72 @ $186DE7
+
+#W16($186828)
+//そこって　もうかるですかー<E>
+//POINTER #73 @ $18682A - STRING #73 @ $186E02
+
+#W16($18682A)
+//アンラッキーかも・・<E>
+//POINTER #74 @ $18682C - STRING #74 @ $186E17
+
+#W16($18682C)
+//いってらっはい<E>
+//POINTER #75 @ $18682E - STRING #75 @ $186E26
+
+#W16($18682E)
+//ひゅいーんと　ワープ<E>
+//POINTER #76 @ $186830 - STRING #76 @ $186E3B
+
+#W16($186830)
+//かわいそうで　見てられないー<E>
+//POINTER #77 @ $186832 - STRING #77 @ $186E58
+
+#W16($186832)
+//みごとに　はまりましたねー<E>
+//POINTER #78 @ $186834 - STRING #78 @ $186E73
+
+#W16($186834)
+//海より深く　同情します<E>
+//POINTER #79 @ $186836 - STRING #79 @ $186E8A
+
+#W16($186836)
+//しんぼー　しんぼー<E>
+//POINTER #80 @ $186838 - STRING #80 @ $186E9D
+
+#W16($186838)
+//大きな会社ですねー<E>
+//POINTER #81 @ $18683A - STRING #81 @ $186EB0
+
+#W16($18683A)
+//つながりましたかー・・<E>
+//POINTER #82 @ $18683C - STRING #82 @ $186EC7
+
+#W16($18683C)
+//合体ですかー<E>
+//POINTER #83 @ $18683E - STRING #83 @ $186ED4
+
+#W16($18683E)
+//ビルが　減りますネー<E>
+//POINTER #84 @ $186840 - STRING #84 @ $186EE9
+
+#W16($186840)
+//おつかれさまでしたー<E>
+//POINTER #85 @ $186842 - STRING #85 @ $186EFE
+
+#W16($186842)
+//<S>さん　おめでとう<E>
+
+//--------------------------------------------------------------------
+//BLOCK #011 NAME:		Master Table 04 (end $1874CB)
+#JMP($186FBC,$1874CB)
+//POINTER #0 @ $186F10 - STRING #0 @ $186FBC
+
+#W16($186F10)
+//・・・・・・・・<E>
+//POINTER #1 @ $186F12 - STRING #1 @ $186FCD
+
+#W16($186F12)
+//・・・・・・・・宇<E>
+//POINTER #2 @ $186F14 - STRING #2 @ $186FE0
+
+#W16($186F14)
+//・・・・・・・・宙<E>
+//POINTER #3 @ $186F16 - STRING #3 @ $186FF3
+
+#W16($186F16)
+//・・・・・・・・意<E>
+//POINTER #4 @ $186F18 - STRING #4 @ $187006
+
+#W16($186F18)
+//・・・・・・・・志<E>
+//POINTER #5 @ $186F1A - STRING #5 @ $187019
+
+#W16($186F1A)
+//∞　∞<E>
+//POINTER #6 @ $186F1C - STRING #6 @ $187020
+
+#W16($186F1C)
+//・・・・・・・・は<E>
+//POINTER #7 @ $186F1E - STRING #7 @ $187033
+
+#W16($186F1E)
+//×２・・・・・・？<E>
+//POINTER #8 @ $186F20 - STRING #8 @ $187046
+
+#W16($186F20)
+//・・・・・・い<E>
+//POINTER #9 @ $186F22 - STRING #9 @ $187055
+
+#W16($186F22)
+//・・・・・・ら<E>
+//POINTER #10 @ $186F24 - STRING #10 @ $187064
+
+#W16($186F24)
+//？？<E>
+//POINTER #11 @ $186F26 - STRING #11 @ $187069
+
+#W16($186F26)
+//・・・・・・・・・・・<E>
+//POINTER #12 @ $186F28 - STRING #12 @ $187080
+
+#W16($186F28)
+//・・・・・・・・す<E>
+//POINTER #13 @ $186F2A - STRING #13 @ $187093
+
+#W16($186F2A)
+//・・・・・・・・め<E>
+//POINTER #14 @ $186F2C - STRING #14 @ $1870A6
+
+#W16($186F2C)
+//・・・・・・・・で<E>
+//POINTER #15 @ $186F2E - STRING #15 @ $1870B9
+
+#W16($186F2E)
+//・・・・・・・・す<E>
+//POINTER #16 @ $186F30 - STRING #16 @ $1870CC
+
+#W16($186F30)
+//・・・・・・・・さ<E>
+//POINTER #17 @ $186F32 - STRING #17 @ $1870DF
+
+#W16($186F32)
+//・・・・・・・・い<E>
+//POINTER #18 @ $186F34 - STRING #18 @ $1870F2
+
+#W16($186F34)
+//・・・・・・・・こ<E>
+//POINTER #19 @ $186F36 - STRING #19 @ $187105
+
+#W16($186F36)
+//・・・・・・・・ろ<E>
+//POINTER #20 @ $186F38 - STRING #20 @ $187118
+
+#W16($186F38)
+//・・・・・・・・ほ<E>
+//POINTER #21 @ $186F3A - STRING #21 @ $18712B
+
+#W16($186F3A)
+//・・・・・・・・う<E>
+//POINTER #22 @ $186F3C - STRING #22 @ $18713E
+
+#W16($186F3C)
+//・・・・・・・・＄<E>
+//POINTER #23 @ $186F3E - STRING #23 @ $187151
+
+#W16($186F3E)
+//・・・・・・・・<E>
+//POINTER #24 @ $186F40 - STRING #24 @ $187162
+
+#W16($186F40)
+//！！！！！！！！！<E>
+//POINTER #25 @ $186F42 - STRING #25 @ $187175
+
+#W16($186F42)
+//・・・・グ・・<E>
+//POINTER #26 @ $186F44 - STRING #26 @ $187184
+
+#W16($186F44)
+//・・・・タ・・<E>
+//POINTER #27 @ $186F46 - STRING #27 @ $187193
+
+#W16($186F46)
+//・・・・・・・・＄<E>
+//POINTER #28 @ $186F48 - STRING #28 @ $1871A6
+
+#W16($186F48)
+//・・・・ラ<E>
+//POINTER #29 @ $186F4A - STRING #29 @ $1871B1
+
+#W16($186F4A)
+//・・・・・・・・<E>
+//POINTER #30 @ $186F4C - STRING #30 @ $1871C2
+
+#W16($186F4C)
+//・・・・＄<E>
+//POINTER #31 @ $186F4E - STRING #31 @ $1871CD
+
+#W16($186F4E)
+//・・・・・・・・<E>
+//POINTER #32 @ $186F50 - STRING #32 @ $1871DE
+
+#W16($186F50)
+//・・・・ヤ<E>
+//POINTER #33 @ $186F52 - STRING #33 @ $1871E9
+
+#W16($186F52)
+//・・・・・・・・<E>
+//POINTER #34 @ $186F54 - STRING #34 @ $1871FA
+
+#W16($186F54)
+//・・・Ｒ<E>
+//POINTER #35 @ $186F56 - STRING #35 @ $187203
+
+#W16($186F56)
+//・・・Ｌ<E>
+//POINTER #36 @ $186F58 - STRING #36 @ $18720C
+
+#W16($186F58)
+//・・・・・ラ<E>
+//POINTER #37 @ $186F5A - STRING #37 @ $187219
+
+#W16($186F5A)
+//・・・・・ン<E>
+//POINTER #38 @ $186F5C - STRING #38 @ $187226
+
+#W16($186F5C)
+//・・・・・ド<E>
+//POINTER #39 @ $186F5E - STRING #39 @ $187233
+
+#W16($186F5E)
+//・・・・・マ<E>
+//POINTER #40 @ $186F60 - STRING #40 @ $187240
+
+#W16($186F60)
+//・・・・・ア<E>
+//POINTER #41 @ $186F62 - STRING #41 @ $18724D
+
+#W16($186F62)
+//・・・・・ク<E>
+//POINTER #42 @ $186F64 - STRING #42 @ $18725A
+
+#W16($186F64)
+//う・・・！<E>
+//POINTER #43 @ $186F66 - STRING #43 @ $187265
+
+#W16($186F66)
+//・・・・・・・・<E>
+//POINTER #44 @ $186F68 - STRING #44 @ $187276
+
+#W16($186F68)
+//お・・・・？<E>
+//POINTER #45 @ $186F6A - STRING #45 @ $187283
+
+#W16($186F6A)
+//・・・・・・・・<E>
+//POINTER #46 @ $186F6C - STRING #46 @ $187294
+
+#W16($186F6C)
+//・・・・・ぞ<E>
+//POINTER #47 @ $186F6E - STRING #47 @ $1872A1
+
+#W16($186F6E)
+//・・・・・う<E>
+//POINTER #48 @ $186F70 - STRING #48 @ $1872AE
+
+#W16($186F70)
+//・・・・・ち<E>
+//POINTER #49 @ $186F72 - STRING #49 @ $1872BB
+
+#W16($186F72)
+//・・・・・く<E>
+//POINTER #50 @ $186F74 - STRING #50 @ $1872C8
+
+#W16($186F74)
+//・・・・・＄<E>
+//POINTER #51 @ $186F76 - STRING #51 @ $1872D5
+
+#W16($186F76)
+//・・・・・も<E>
+//POINTER #52 @ $186F78 - STRING #52 @ $1872E2
+
+#W16($186F78)
+//・・・・・お<E>
+//POINTER #53 @ $186F7A - STRING #53 @ $1872EF
+
+#W16($186F7A)
+//・・・・・ど<E>
+//POINTER #54 @ $186F7C - STRING #54 @ $1872FC
+
+#W16($186F7C)
+//・・・Ｓ？<E>
+//POINTER #55 @ $186F7E - STRING #55 @ $187307
+
+#W16($186F7E)
+//・・・・・・・・<E>
+//POINTER #56 @ $186F80 - STRING #56 @ $187318
+
+#W16($186F80)
+//Ｗ！？<E>
+//POINTER #57 @ $186F82 - STRING #57 @ $18731F
+
+#W16($186F82)
+//・・・・・・・・<E>
+//POINTER #58 @ $186F84 - STRING #58 @ $187330
+
+#W16($186F84)
+//＄＄<E>
+//POINTER #59 @ $186F86 - STRING #59 @ $187335
+
+#W16($186F86)
+//・・・・・・・・<E>
+//POINTER #60 @ $186F88 - STRING #60 @ $187346
+
+#W16($186F88)
+//・・・・ば<E>
+//POINTER #61 @ $186F8A - STRING #61 @ $187351
+
+#W16($186F8A)
+//・・・・な・・な<E>
+//POINTER #62 @ $186F8C - STRING #62 @ $187362
+
+#W16($186F8C)
+//・・・・・ほ！<E>
+//POINTER #63 @ $186F8E - STRING #63 @ $187371
+
+#W16($186F8E)
+//・・・・・・・・<E>
+//POINTER #64 @ $186F90 - STRING #64 @ $187382
+
+#W16($186F90)
+//ぴ−−−−−−−<E>
+//POINTER #65 @ $186F92 - STRING #65 @ $187393
+
+#W16($186F92)
+//・・・・・・・・<E>
+//POINTER #66 @ $186F94 - STRING #66 @ $1873A4
+
+#W16($186F94)
+//ゃゃゃゃゃゃゃゃゃゃゃゃ<E>
+//POINTER #67 @ $186F96 - STRING #67 @ $1873BD
+
+#W16($186F96)
+//<$07>？<E>
+//POINTER #68 @ $186F98 - STRING #68 @ $1873C1
+
+#W16($186F98)
+//・・・・・・・・<E>
+//POINTER #69 @ $186F9A - STRING #69 @ $1873D2
+
+#W16($186F9A)
+//<$07>！？<E>
+//POINTER #70 @ $186F9C - STRING #70 @ $1873D8
+
+#W16($186F9C)
+//・・・・・・・・<E>
+//POINTER #71 @ $186F9E - STRING #71 @ $1873E9
+
+#W16($186F9E)
+//っっっっっっっっ！<E>
+//POINTER #72 @ $186FA0 - STRING #72 @ $1873FC
+
+#W16($186FA0)
+//きらきら・・<E>
+//POINTER #73 @ $186FA2 - STRING #73 @ $187409
+
+#W16($186FA2)
+//・・・・・・・・<E>
+//POINTER #74 @ $186FA4 - STRING #74 @ $18741A
+
+#W16($186FA4)
+//ぷ　　　　わ<E>
+//POINTER #75 @ $186FA6 - STRING #75 @ $187427
+
+#W16($186FA6)
+//・・・・・・・・<E>
+//POINTER #76 @ $186FA8 - STRING #76 @ $187438
+
+#W16($186FA8)
+//まい・・まい・・・<E>
+//POINTER #77 @ $186FAA - STRING #77 @ $18744B
+
+#W16($186FAA)
+//か・・わ・・<E>
+//POINTER #78 @ $186FAC - STRING #78 @ $187458
+
+#W16($186FAC)
+//・・い　・・そ<E>
+//POINTER #79 @ $186FAE - STRING #79 @ $187467
+
+#W16($186FAE)
+//・・・・・・・・<E>
+//POINTER #80 @ $186FB0 - STRING #80 @ $187478
+
+#W16($186FB0)
+//っっっっっっっがっ<E>
+//POINTER #81 @ $186FB2 - STRING #81 @ $18748B
+
+#W16($186FB2)
+//つ・・・・・<E>
+//POINTER #82 @ $186FB4 - STRING #82 @ $187498
+
+#W16($186FB4)
+//ぶ・・・・<E>
+//POINTER #83 @ $186FB6 - STRING #83 @ $1874A3
+
+#W16($186FB6)
+//れ・・・・？<E>
+//POINTER #84 @ $186FB8 - STRING #84 @ $1874B0
+
+#W16($186FB8)
+//＄＄＄＄＄＄＄<E>
+//POINTER #85 @ $186FBA - STRING #85 @ $1874BF
+
+#W16($186FBA)
+//・・・・・！<E>
+
+//------------------------------------------------------------------------------
+//BLOCK #012 NAME:		Master Table 05 (end $187FFF)
+#JMP($187578,$187FFF)
+//POINTER #0 @ $1874CC - STRING #0 @ $187578
+
+#W16($1874CC)
+//次はマーカーを　置けますかな<E>
+//POINTER #1 @ $1874CE - STRING #1 @ $187595
+
+#W16($1874CE)
+//さて　注目のひと振り！<E>
+//POINTER #2 @ $1874D0 - STRING #2 @ $1875AC
+
+#W16($1874D0)
+//ここで大波乱が　起きるか？<E>
+//POINTER #3 @ $1874D2 - STRING #3 @ $1875C7
+
+#W16($1874D2)
+//<S>氏の　つぎの作戦は？<E>
+//POINTER #4 @ $1874D4 - STRING #4 @ $1875DD
+
+#W16($1874D4)
+//<S>さんの番ですぞー<E>
+//POINTER #5 @ $1874D6 - STRING #5 @ $1875EF
+
+#W16($1874D6)
+//とかくこの世は　金ヶ崎<E>
+//POINTER #6 @ $1874D8 - STRING #6 @ $187606
+
+#W16($1874D8)
+//<S>さん　どうぞー<E>
+//POINTER #7 @ $1874DA - STRING #7 @ $187616
+
+#W16($1874DA)
+//ほほー　今度は　早そうですな<E>
+//POINTER #8 @ $1874DC - STRING #8 @ $187633
+
+#W16($1874DC)
+//なにやら　ヒマですなー<E>
+//POINTER #9 @ $1874DE - STRING #9 @ $18764A
+
+#W16($1874DE)
+//ゲームが　進みませんなあ<E>
+//POINTER #10 @ $1874E0 - STRING #10 @ $187663
+
+#W16($1874E0)
+//がやがや<E>
+//POINTER #11 @ $1874E2 - STRING #11 @ $18766C
+
+#W16($1874E2)
+//なにをしておるのだー<E>
+//POINTER #12 @ $1874E4 - STRING #12 @ $187681
+
+#W16($1874E4)
+//おっ？<E>
+//POINTER #13 @ $1874E6 - STRING #13 @ $187688
+
+#W16($1874E6)
+//どうなりますやら・・<E>
+//POINTER #14 @ $1874E8 - STRING #14 @ $18769D
+
+#W16($1874E8)
+//どら　どら　どら・・<E>
+//POINTER #15 @ $1874EA - STRING #15 @ $1876B2
+
+#W16($1874EA)
+//なるほど　<$07>ですか<E>
+//POINTER #16 @ $1874EC - STRING #16 @ $1876C4
+
+#W16($1874EC)
+//彦左衛門が　おともしますぞ！<E>
+//POINTER #17 @ $1874EE - STRING #17 @ $1876E1
+
+#W16($1874EE)
+//レッツ　ゴー　ゴー<E>
+//POINTER #18 @ $1874F0 - STRING #18 @ $1876F4
+
+#W16($1874F0)
+//行方は　ピンチか　スロットか<E>
+//POINTER #19 @ $1874F2 - STRING #19 @ $187711
+
+#W16($1874F2)
+//では　進んでみましょうか<E>
+//POINTER #20 @ $1874F4 - STRING #20 @ $18772A
+
+#W16($1874F4)
+//石橋を叩きすぎたら　割れます<E>
+//POINTER #21 @ $1874F6 - STRING #21 @ $187747
+
+#W16($1874F6)
+//備えあれば　売れるビルあり<E>
+//POINTER #22 @ $1874F8 - STRING #22 @ $187762
+
+#W16($1874F8)
+//貯金が　減りますなあ<E>
+//POINTER #23 @ $1874FA - STRING #23 @ $187777
+
+#W16($1874FA)
+//金がすべての　この世間<E>
+//POINTER #24 @ $1874FC - STRING #24 @ $18778E
+
+#W16($1874FC)
+//うひゃひゃ・・いや　失礼<E>
+//POINTER #25 @ $1874FE - STRING #25 @ $1877A7
+
+#W16($1874FE)
+//みごとな　払いっぷり<E>
+//POINTER #26 @ $187500 - STRING #26 @ $1877BC
+
+#W16($187500)
+//<S>は金がない　私は金ヶ崎<E>
+//POINTER #27 @ $187502 - STRING #27 @ $1877D4
+
+#W16($187502)
+//気持ちは　わかりますぞ・・<E>
+//POINTER #28 @ $187504 - STRING #28 @ $1877EF
+
+#W16($187504)
+//無駄づかいは　いけませんぞ<E>
+//POINTER #29 @ $187506 - STRING #29 @ $18780A
+
+#W16($187506)
+//勝負を投げては　いけません<E>
+//POINTER #30 @ $187508 - STRING #30 @ $187825
+
+#W16($187508)
+//さあ　ここらで大勝負か？<E>
+//POINTER #31 @ $18750A - STRING #31 @ $18783E
+
+#W16($18750A)
+//金は天下の　まわりもの<E>
+//POINTER #32 @ $18750C - STRING #32 @ $187855
+
+#W16($18750C)
+//しぶとい人ですなあ<E>
+//POINTER #33 @ $18750E - STRING #33 @ $187868
+
+#W16($18750E)
+//ふむ・・<E>
+//POINTER #34 @ $187510 - STRING #34 @ $187871
+
+#W16($187510)
+//マークが　おけますなー<E>
+//POINTER #35 @ $187512 - STRING #35 @ $187888
+
+#W16($187512)
+//さあ　ランドマークをどうぞ<E>
+//POINTER #36 @ $187514 - STRING #36 @ $1878A3
+
+#W16($187514)
+//街がカラフルに　なってきました<E>
+//POINTER #37 @ $187516 - STRING #37 @ $1878C2
+
+#W16($187516)
+//点滅中の土地に　置けます<E>
+//POINTER #38 @ $187518 - STRING #38 @ $1878DB
+
+#W16($187518)
+//会社独占は　おいしいですぞー<E>
+//POINTER #39 @ $18751A - STRING #39 @ $1878F8
+
+#W16($18751A)
+//やり直しは　ききませんぞ<E>
+//POINTER #40 @ $18751C - STRING #40 @ $187911
+
+#W16($18751C)
+//タワードリーム　バイ　アスキー<E>
+//POINTER #41 @ $18751E - STRING #41 @ $187930
+
+#W16($18751E)
+//みなさんは　どう思います？<E>
+//POINTER #42 @ $187520 - STRING #42 @ $18794B
+
+#W16($187520)
+//そこがそんなに大きくなるとは<E>
+//POINTER #43 @ $187522 - STRING #43 @ $187968
+
+#W16($187522)
+//もはや終盤ですかなあ<E>
+//POINTER #44 @ $187524 - STRING #44 @ $18797D
+
+#W16($187524)
+//手に汗にぎりますな<E>
+//POINTER #45 @ $187526 - STRING #45 @ $187990
+
+#W16($187526)
+//デッドヒート　ですな<E>
+//POINTER #46 @ $187528 - STRING #46 @ $1879A5
+
+#W16($187528)
+//どのへんに　いきますかな<E>
+//POINTER #47 @ $18752A - STRING #47 @ $1879BE
+
+#W16($18752A)
+//さあ　増築　増築<E>
+//POINTER #48 @ $18752C - STRING #48 @ $1879CF
+
+#W16($18752C)
+//<S>氏　張り切ってますなあ<E>
+//POINTER #49 @ $18752E - STRING #49 @ $1879E7
+
+#W16($18752E)
+//お手並　拝見・・<E>
+//POINTER #50 @ $187530 - STRING #50 @ $1879F8
+
+#W16($187530)
+//楽しく買い物　いたしましょう<E>
+//POINTER #51 @ $187532 - STRING #51 @ $187A15
+
+#W16($187532)
+//そっちは　おすすめしませんなあ<E>
+//POINTER #52 @ $187534 - STRING #52 @ $187A34
+
+#W16($187534)
+//ひとの土地には　積めませんぞ<E>
+//POINTER #53 @ $187536 - STRING #53 @ $187A51
+
+#W16($187536)
+//２フロアか　３フロアか・・<E>
+//POINTER #54 @ $187538 - STRING #54 @ $187A6C
+
+#W16($187538)
+//マークが　おけませんなあ<E>
+//POINTER #55 @ $18753A - STRING #55 @ $187A85
+
+#W16($18753A)
+//休みみたいな　もんですな<E>
+//POINTER #56 @ $18753C - STRING #56 @ $187A9E
+
+#W16($18753C)
+//おや　マークが　おけませんなあ<E>
+//POINTER #57 @ $18753E - STRING #57 @ $187ABD
+
+#W16($18753E)
+//そっちですか　なるほど・・<E>
+//POINTER #58 @ $187540 - STRING #58 @ $187AD8
+
+#W16($187540)
+//まずは　めでたい<E>
+//POINTER #59 @ $187542 - STRING #59 @ $187AE9
+
+#W16($187542)
+//<$07>Ｇですか・・<E>
+//POINTER #60 @ $187544 - STRING #60 @ $187AF7
+
+#W16($187544)
+//バナナは　まずいですなあ<E>
+//POINTER #61 @ $187546 - STRING #61 @ $187B10
+
+#W16($187546)
+//ころんでケガしないように<E>
+//POINTER #62 @ $187548 - STRING #62 @ $187B29
+
+#W16($187548)
+//ふぉっふぉっふぉ<E>
+//POINTER #63 @ $18754A - STRING #63 @ $187B3A
+
+#W16($18754A)
+//マークが　おけませんなー<E>
+//POINTER #64 @ $18754C - STRING #64 @ $187B53
+
+#W16($18754C)
+//はは　楽しい　楽しい<E>
+//POINTER #65 @ $18754E - STRING #65 @ $187B68
+
+#W16($18754E)
+//一発逆転　イカカード<E>
+//POINTER #66 @ $187550 - STRING #66 @ $187B7D
+
+#W16($187550)
+//ショックは　否定できまいて<E>
+//POINTER #67 @ $187552 - STRING #67 @ $187B98
+
+#W16($187552)
+//高額な会社に置くのがセオリー<E>
+//POINTER #68 @ $187554 - STRING #68 @ $187BB5
+
+#W16($187554)
+//もう少し　欲しいとこでしたな<E>
+//POINTER #69 @ $187556 - STRING #69 @ $187BD2
+
+#W16($187556)
+//ほひゃー<E>
+//POINTER #70 @ $187558 - STRING #70 @ $187BDB
+
+#W16($187558)
+//なんとなんと　<$07>フロアも！<E>
+//POINTER #71 @ $18755A - STRING #71 @ $187BF5
+
+#W16($18755A)
+//やりましたなあ　<S>さん<E>
+//POINTER #72 @ $18755C - STRING #72 @ $187C0B
+
+#W16($18755C)
+//マークが　おけません・・<E>
+//POINTER #73 @ $18755E - STRING #73 @ $187C24
+
+#W16($18755E)
+//ホリデー！　・・ではなかったか<E>
+//POINTER #74 @ $187560 - STRING #74 @ $187C43
+
+#W16($187560)
+//落ち着きのない人ですなー<E>
+//POINTER #75 @ $187562 - STRING #75 @ $187C5C
+
+#W16($187562)
+//ほほー<E>
+//POINTER #76 @ $187564 - STRING #76 @ $187C63
+
+#W16($187564)
+//まあまあ　気を落とさずに<E>
+//POINTER #77 @ $187566 - STRING #77 @ $187C7C
+
+#W16($187566)
+//人は苦労して大きくなるもの・・<E>
+//POINTER #78 @ $187568 - STRING #78 @ $187C9B
+
+#W16($187568)
+//こういうことも　ありますわなあ<E>
+//POINTER #79 @ $18756A - STRING #79 @ $187CBA
+
+#W16($18756A)
+//ちょっと　無防備でしたな<E>
+//POINTER #80 @ $18756C - STRING #80 @ $187CD3
+
+#W16($18756C)
+//いやー　おみごと　おみごと！<E>
+//POINTER #81 @ $18756E - STRING #81 @ $187CF0
+
+#W16($18756E)
+//とにかく　めでたい<E>
+//POINTER #82 @ $187570 - STRING #82 @ $187D03
+
+#W16($187570)
+//ひとっぷろ浴びたい気分だわい<E>
+//POINTER #83 @ $187572 - STRING #83 @ $187D20
+
+#W16($187572)
+//かんぷく　かんぷく・・<E>
+//POINTER #84 @ $187574 - STRING #84 @ $187D37
+
+#W16($187574)
+//おつかれ　おつかれ<E>
+//POINTER #85 @ $187576 - STRING #85 @ $187D4A
+
+#W16($187576)
+//さて　最終結果は・・？<E>
+
+//---------------------------------------------------------
