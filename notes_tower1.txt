@@ -152,3 +152,5 @@ starts with pointer list (offest $8000)
 
 80b217 render char for prompt window
 
+https://gamemanual.midnightmeattrain.com/entry/%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0 (manual)
+https://w.atwiki.jp/sfcall/pages/1247.html (strategy wiki)
